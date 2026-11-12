@@ -1,0 +1,22 @@
+# data and runtime artefacts (re-creatable with run_pipeline.sh)
+data/raw/
+data/processed/
+data/demo/*.tif
+storage/
+outputs/cli/
+outputs/exp6_maps/
+*.zip
+*.part
+
+# python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# node
+frontend/node_modules/
+frontend/dist/
+
+# large model files are kept (small: < 20 MB). Remove the next line to version them.
+# models/

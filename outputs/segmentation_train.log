@@ -1,0 +1,46 @@
+train 432  model-selection val 48  held-out test 180
+parameters: 1093381
+ep 01 loss 1.4114 val IoU 0.4931 Dice 0.6605 (158s)
+ep 02 loss 1.2127 val IoU 0.8765 Dice 0.9342 (311s)
+ep 03 loss 1.0770 val IoU 0.9151 Dice 0.9557 (770s)
+ep 04 loss 0.9632 val IoU 0.8982 Dice 0.9464 (1041s)
+ep 05 loss 0.8438 val IoU 0.9259 Dice 0.9615 (1225s)
+ep 06 loss 0.7155 val IoU 0.9221 Dice 0.9595 (1371s)
+ep 07 loss 0.6084 val IoU 0.9192 Dice 0.9579 (1517s)
+ep 08 loss 0.5548 val IoU 0.9319 Dice 0.9647 (1684s)
+ep 09 loss 0.4772 val IoU 0.6184 Dice 0.7642 (1899s)
+ep 10 loss 0.4137 val IoU 0.9249 Dice 0.9610 (2105s)
+ep 11 loss 0.3786 val IoU 0.9217 Dice 0.9592 (2285s)
+ep 12 loss 0.3375 val IoU 0.9342 Dice 0.9660 (2474s)
+ep 13 loss 0.3759 val IoU 0.9379 Dice 0.9680 (2618s)
+ep 14 loss 0.3631 val IoU 0.9374 Dice 0.9677 (2747s)
+ep 15 loss 0.3420 val IoU 0.9346 Dice 0.9662 (2868s)
+ep 16 loss 0.3343 val IoU 0.9354 Dice 0.9666 (2985s)
+{
+  "dataset": "PhenoBench v1.1 subset",
+  "n_train": 432,
+  "n_model_selection_val": 48,
+  "test_split": "PhenoBench official val split (held out)",
+  "test_unet": {
+    "iou": 0.9333976386335783,
+    "dice": 0.9655516485406009,
+    "precision": 0.9679813595644451,
+    "recall": 0.9631341045165743,
+    "accuracy": 0.9915083567301433,
+    "mean_image_iou": 0.8756232948526933,
+    "std_image_iou": 0.11870171253119335,
+    "n_images": 180
+  },
+  "test_exg_otsu_baseline": {
+    "iou": 0.5016655010501793,
+    "dice": 0.6681454700788464,
+    "precision": 0.5251022373896431,
+    "recall": 0.9182997309937588,
+    "accuracy": 0.8872872034708659,
+    "mean_image_iou": 0.7428989019370069,
+    "std_image_iou": 0.2746868710837901,
+    "n_images": 180
+  },
+  "best_val_iou": 0.937897843963308,
+  "train_seconds": 3104.5
+}

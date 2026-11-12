@@ -1,0 +1,92 @@
+{
+  "MAIA_ElPalmar_Orthomosaic_20220809_IVIA_georef_SR_CALIBRATED_COG.tif": {
+    "trial": "IVIA2022",
+    "date": "2022-08-09",
+    "dx_m": 0.0,
+    "dy_m": 0.086,
+    "r_at_zero": 0.753,
+    "r_best": 0.773,
+    "applied": false
+  },
+  "MAIA_ElPalmar_Orthomosaic_20220817_IVIA_georef_SR_CALIBRATED_COG.tif": {
+    "trial": "IVIA2022",
+    "date": "2022-08-17",
+    "dx_m": -0.059,
+    "dy_m": -0.089,
+    "r_at_zero": 0.661,
+    "r_best": 0.669,
+    "applied": false
+  },
+  "MAIA_ElPalmar_Orthomosaic_20220831_IVIA_georef_SR_CALIBRATED_COG.tif": {
+    "trial": "IVIA2022",
+    "date": "2022-08-31",
+    "dx_m": -0.091,
+    "dy_m": -0.06,
+    "r_at_zero": 0.905,
+    "r_best": 0.908,
+    "applied": false
+  },
+  "MAIA_ElPalmar_Orthomosaic_20220923_IVIA_georef_SR_CALIBRATED_COG.tif": {
+    "trial": "IVIA2022",
+    "date": "2022-09-23",
+    "dx_m": 0.0,
+    "dy_m": 0.03,
+    "r_at_zero": 0.986,
+    "r_best": 0.987,
+    "applied": false
+  },
+  "MAIA_Albufera1_flight1_1_orthomosaic_2023-07-11_corrected_geocal_COG.tif": {
+    "trial": "IVIA2023-F2",
+    "date": "2023-07-11",
+    "dx_m": -0.672,
+    "dy_m": 0.107,
+    "r_at_zero": 0.256,
+    "r_best": 0.58,
+    "applied": true
+  },
+  "MAIA_Albufera_flight1_1_corrected_orthomosaic_2023-07-18_geocal_COG.tif": {
+    "trial": "IVIA2023-F2",
+    "date": "2023-07-18",
+    "dx_m": -0.687,
+    "dy_m": 0.358,
+    "r_at_zero": 0.198,
+    "r_best": 0.496,
+    "applied": true
+  },
+  "MAIA_Albufera_flight1_1_orthomosaic_2023-08-08_corrected_geocal_COG.tif": {
+    "trial": "IVIA2023-F2",
+    "date": "2023-08-08",
+    "dx_m": -0.564,
+    "dy_m": -0.119,
+    "r_at_zero": 0.09,
+    "r_best": 0.318,
+    "applied": true
+  },
+  "MAIA_Albufera_flight1_1_orthomosaic_2023-08-25_corrected_geocal_COG.tif": {
+    "trial": "IVIA2023-F2",
+    "date": "2023-08-25",
+    "dx_m": -0.979,
+    "dy_m": -0.416,
+    "r_at_zero": 0.033,
+    "r_best": 0.268,
+    "applied": true
+  },
+  "MAIA_Albufera_flight1_orthomosaic_2023-09-18_corrected_geocal_COG.tif": {
+    "trial": "IVIA2023-F2",
+    "date": "2023-09-18",
+    "dx_m": -0.605,
+    "dy_m": 0.317,
+    "r_at_zero": 0.331,
+    "r_best": 0.921,
+    "applied": true
+  },
+  "MAIA_Albufera_flight2_1_corected_orthomosaic_2023-09-07_geocal_COG.tif": {
+    "trial": "IVIA2023-F2",
+    "date": "2023-09-07",
+    "dx_m": -0.59,
+    "dy_m": 0.148,
+    "r_at_zero": 0.11,
+    "r_best": 0.728,
+    "applied": true
+  }
+}

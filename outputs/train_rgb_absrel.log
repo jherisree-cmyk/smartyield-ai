@@ -1,0 +1,21 @@
+track=rgb rows=8425 plots=1765 features=75 site-seasons=['IRTA2022', 'IVIA2022', 'IVIA2023']
+[P1] Mean baseline      RMSE 2.498 MAE 2.001 R2 -0.006 MAPE 48.2% (1s)
+[P1] Linear Regression  RMSE 2.476 MAE 1.984 R2 0.011 MAPE 46.9% (2s)
+[P1] Ridge Regression   RMSE 2.472 MAE 1.987 R2 0.015 MAPE 47.0% (41s)
+[P1] Random Forest      RMSE 2.397 MAE 1.916 R2 0.073 MAPE 44.4% (978s)
+[P1] SVR                RMSE 2.456 MAE 1.935 R2 0.027 MAPE 47.0% (1686s)
+[P1] XGBoost            RMSE 2.425 MAE 1.934 R2 0.052 MAPE 45.2% (3379s)
+[P2] Mean baseline      IRTA2022: R2 -0.12 RMSE 1.77  IVIA2022: R2 -0.09 RMSE 2.81  IVIA2023: R2 -0.01 RMSE 2.55
+[P2] Linear Regression  IRTA2022: R2 -1138292.27 RMSE 1782.75  IVIA2022: R2 -20028.24 RMSE 380.65  IVIA2023: R2 -23492043.58 RMSE 12269.35
+[P2] Ridge Regression   IRTA2022: R2 -0.58 RMSE 2.10  IVIA2022: R2 -0.14 RMSE 2.87  IVIA2023: R2 -8670.56 RMSE 235.73
+[P2] Random Forest      IRTA2022: R2 -0.09 RMSE 1.74  IVIA2022: R2 -0.14 RMSE 2.87  IVIA2023: R2 -0.62 RMSE 3.22
+[P2] SVR                IRTA2022: R2 -0.10 RMSE 1.75  IVIA2022: R2 -0.17 RMSE 2.91  IVIA2023: R2 -0.06 RMSE 2.60
+[P2] XGBoost            IRTA2022: R2 -0.19 RMSE 1.82  IVIA2022: R2 -0.15 RMSE 2.89  IVIA2023: R2 -0.81 RMSE 3.40
+[P3] Mean baseline      R2 -0.013
+[P3] Linear Regression  R2 -23492043.584
+[P3] Ridge Regression   R2 -8670.564
+[P3] Random Forest      R2 -0.619
+[P3] SVR                R2 -0.059
+[P3] XGBoost            R2 -0.806
+selected: Random Forest conformal 90% half-width: 3.942
+saved models/yield_rgb_absrel.joblib  (23005s)

@@ -1,0 +1,31 @@
+npm warn exec The following package was not found and will be installed: create-vite@9.3.4
+
+> npx
+> cva frontend --template react --no-interactive
+
+
+create-vite v9.3.4
+
+│
+◇  Scaffolding project in C:\Users\donep\smartyield-ai\frontend...
+│
+└  Done. Now run:
+
+  cd frontend
+  npm install
+  npm run dev
+
+
+added 24 packages, and audited 25 packages in 52s
+
+9 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+added 7 packages, and audited 32 packages in 18s
+
+10 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities

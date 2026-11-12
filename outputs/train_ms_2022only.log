@@ -1,0 +1,13 @@
+track=ms rows=3019 plots=855 features=69 site-seasons=['IRTA2022', 'IVIA2022']
+[P1] Mean baseline      RMSE 2.443 MAE 1.918 R2 -0.033 MAPE 52.7% (0s)
+[P1] Linear Regression  RMSE 2.180 MAE 1.686 R2 0.177 MAPE 40.6% (1s)
+[P1] Random Forest      RMSE 2.045 MAE 1.594 R2 0.276 MAPE 38.4% (75s)
+[P1] SVR                RMSE 2.065 MAE 1.587 R2 0.261 MAPE 38.3% (101s)
+[P1] XGBoost            RMSE 2.077 MAE 1.605 R2 0.253 MAPE 37.8% (236s)
+[P2] Mean baseline      IRTA2022: R2 -0.45 RMSE 2.02  IVIA2022: R2 -0.18 RMSE 2.92
+[P2] Linear Regression  IRTA2022: R2 -218.03 RMSE 24.73  IVIA2022: R2 -2.45 RMSE 4.99
+[P2] Random Forest      IRTA2022: R2 -0.70 RMSE 2.18  IVIA2022: R2 -0.07 RMSE 2.78
+[P2] SVR                IRTA2022: R2 -0.00 RMSE 1.67  IVIA2022: R2 -0.02 RMSE 2.71
+[P2] XGBoost            IRTA2022: R2 -0.81 RMSE 2.25  IVIA2022: R2 -0.17 RMSE 2.90
+selected: Random Forest conformal 90% half-width: 3.383
+saved models/yield_ms.joblib  (368s)

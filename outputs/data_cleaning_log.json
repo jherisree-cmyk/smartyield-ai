@@ -1,0 +1,37 @@
+[
+  {
+    "file": "POLYGONS_IRTA_2022_YIELD.geojson",
+    "rows": 404,
+    "plots": 400,
+    "dropped_missing": 4,
+    "dropped_out_of_range": 0
+  },
+  {
+    "file": "POLYGONS_IRTA_2023_YIELD.geojson",
+    "rows": 402,
+    "plots": 380,
+    "dropped_missing": 22,
+    "dropped_out_of_range": 0
+  },
+  {
+    "file": "POLYGONS_IVIA_2022_YIELD.geojson",
+    "rows": 1824,
+    "plots": 455,
+    "dropped_missing": 0,
+    "dropped_out_of_range": 1
+  },
+  {
+    "file": "POLYGONS_IVIA_2023_1.geojson",
+    "rows": 456,
+    "plots": 455,
+    "dropped_missing": 0,
+    "dropped_out_of_range": 1
+  },
+  {
+    "file": "POLYGONS_IVIA_2023_2.geojson",
+    "rows": 2736,
+    "plots": 455,
+    "dropped_missing": 1,
+    "dropped_out_of_range": 0
+  }
+]

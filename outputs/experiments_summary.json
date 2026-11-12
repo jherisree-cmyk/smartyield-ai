@@ -1,0 +1,1139 @@
+{
+  "exp2b_rice_mask_agreement": [
+    {
+      "image": "IRTA2022_20220830_trial_9band.tif",
+      "ndvi_cover": 0.587032402277492,
+      "unet_vs_ndvi": {
+        "tp": 3015023.0,
+        "fp": 796005.0,
+        "fn": 443931.0,
+        "tn": 1637312.0,
+        "iou": 0.7085903765465189,
+        "dice": 0.8294444195322629,
+        "precision": 0.7911311593617258,
+        "recall": 0.8716574432617489,
+        "accuracy": 0.7895656869821499
+      },
+      "exg_vs_ndvi": {
+        "tp": 2735067.0,
+        "fp": 623995.0,
+        "fn": 723887.0,
+        "tn": 1809322.0,
+        "iou": 0.6698753768415916,
+        "dice": 0.802305832077836,
+        "precision": 0.8142353430808956,
+        "recall": 0.7907208364147078,
+        "accuracy": 0.7712457556687395
+      }
+    },
+    {
+      "image": "IVIA2022_20220831_trial_9band.tif",
+      "ndvi_cover": 0.9129083252348559,
+      "unet_vs_ndvi": {
+        "tp": 1969790.0,
+        "fp": 28.0,
+        "fn": 143821.0,
+        "tn": 201611.0,
+        "iou": 0.9319424934910829,
+        "dice": 0.9647724987994156,
+        "precision": 0.9999857854888112,
+        "recall": 0.9319548393720506,
+        "accuracy": 0.9378689126444225
+      },
+      "exg_vs_ndvi": {
+        "tp": 1849603.0,
+        "fp": 31.0,
+        "fn": 264008.0,
+        "tn": 201608.0,
+        "iou": 0.8750786557042296,
+        "dice": 0.9333780778124994,
+        "precision": 0.9999832399274662,
+        "recall": 0.8750914903451956,
+        "accuracy": 0.8859565921606735
+      }
+    },
+    {
+      "image": "IVIA2023-F2_2023-08-08_trial_9band.tif",
+      "ndvi_cover": 0.8116799994286191,
+      "unet_vs_ndvi": {
+        "tp": 2325545.0,
+        "fp": 189148.0,
+        "fn": 174638.0,
+        "tn": 390926.0,
+        "iou": 0.8647299272570015,
+        "dice": 0.9274586250986064,
+        "precision": 0.9247828661391267,
+        "recall": 0.9301499130263661,
+        "accuracy": 0.8818975169929
+      },
+      "exg_vs_ndvi": {
+        "tp": 2148274.0,
+        "fp": 48595.0,
+        "fn": 351909.0,
+        "tn": 531479.0,
+        "iou": 0.8428643059536763,
+        "dice": 0.9147329005512392,
+        "precision": 0.9778798826875882,
+        "recall": 0.8592467031413298,
+        "accuracy": 0.8699770830810544
+      }
+    }
+  ],
+  "exp1_preprocessing": {
+    "stats": [
+      {
+        "image": "PhenoBench UAV (sugar beet)",
+        "stage": "original",
+        "noise_sigma": 7.962,
+        "rms_contrast": 57.019,
+        "channel_mean_spread": 63.657
+      },
+      {
+        "image": "PhenoBench UAV (sugar beet)",
+        "stage": "denoised",
+        "noise_sigma": 7.21,
+        "rms_contrast": 56.239,
+        "channel_mean_spread": 63.648
+      },
+      {
+        "image": "PhenoBench UAV (sugar beet)",
+        "stage": "analysis",
+        "noise_sigma": 6.826,
+        "rms_contrast": 52.794,
+        "channel_mean_spread": 0.172
+      },
+      {
+        "image": "PhenoBench UAV (sugar beet)",
+        "stage": "enhanced",
+        "noise_sigma": 11.167,
+        "rms_contrast": 66.304,
+        "channel_mean_spread": 0.25
+      },
+      {
+        "image": "MAIA rice trial (RGB render)",
+        "stage": "original",
+        "noise_sigma": 0.562,
+        "rms_contrast": 11.924,
+        "channel_mean_spread": 43.703
+      },
+      {
+        "image": "MAIA rice trial (RGB render)",
+        "stage": "denoised",
+        "noise_sigma": 0.329,
+        "rms_contrast": 11.412,
+        "channel_mean_spread": 43.703
+      },
+      {
+        "image": "MAIA rice trial (RGB render)",
+        "stage": "analysis",
+        "noise_sigma": 0.334,
+        "rms_contrast": 10.904,
+        "channel_mean_spread": 0.065
+      },
+      {
+        "image": "MAIA rice trial (RGB render)",
+        "stage": "enhanced",
+        "noise_sigma": 0.98,
+        "rms_contrast": 21.838,
+        "channel_mean_spread": 0.127
+      },
+      {
+        "image": "same UAV image with warm colour cast",
+        "stage": "original",
+        "noise_sigma": 8.233,
+        "rms_contrast": 59.335,
+        "channel_mean_spread": 101.895
+      },
+      {
+        "image": "same UAV image with warm colour cast",
+        "stage": "denoised",
+        "noise_sigma": 7.497,
+        "rms_contrast": 58.58,
+        "channel_mean_spread": 101.941
+      },
+      {
+        "image": "same UAV image with warm colour cast",
+        "stage": "analysis",
+        "noise_sigma": 7.013,
+        "rms_contrast": 54.063,
+        "channel_mean_spread": 0.151
+      },
+      {
+        "image": "same UAV image with warm colour cast",
+        "stage": "enhanced",
+        "noise_sigma": 11.338,
+        "rms_contrast": 66.748,
+        "channel_mean_spread": 0.314
+      }
+    ],
+    "exg_segmentation_effect": {
+      "as captured": {
+        "raw": {
+          "iou": 0.26422925621865667,
+          "dice": 0.418008450475151
+        },
+        "preprocessed": {
+          "iou": 0.30360608857719057,
+          "dice": 0.4657942168842718
+        }
+      },
+      "warm colour cast": {
+        "raw": {
+          "iou": 0.25789292378236955,
+          "dice": 0.41003954932333825
+        },
+        "preprocessed": {
+          "iou": 0.30223800742290535,
+          "dice": 0.4641824393085046
+        }
+      }
+    },
+    "n_images": 120
+  },
+  "exp3_crop_condition": {
+    "health_calibration": {
+      "poor_below": 0.506933081150055,
+      "healthy_from": 0.6273290276527405,
+      "background_below": 0.3,
+      "source": "20th/60th percentiles of plot NDVI (vegetation pixels), Best Rice training imagery, all flights"
+    },
+    "tests": [
+      {
+        "site_season": "IRTA2022",
+        "flight": "2022-08-30",
+        "feature": "ms_ndvi_veg_mean",
+        "mean_N100": 0.4738,
+        "mean_N200": 0.4912,
+        "mannwhitney_p_N": 0.0,
+        "mean_low_yield": 0.4895,
+        "mean_high_yield": 0.4796,
+        "kruskal_p_tercile": 0.4794,
+        "spearman_rho_yield": -0.0461
+      },
+      {
+        "site_season": "IRTA2022",
+        "flight": "2022-08-30",
+        "feature": "ms_ndre_veg_mean",
+        "mean_N100": 0.2893,
+        "mean_N200": 0.3022,
+        "mannwhitney_p_N": 0.0,
+        "mean_low_yield": 0.2972,
+        "mean_high_yield": 0.2967,
+        "kruskal_p_tercile": 0.3169,
+        "spearman_rho_yield": 0.0555
+      },
+      {
+        "site_season": "IRTA2022",
+        "flight": "2022-08-30",
+        "feature": "ms_cire_mean",
+        "mean_N100": 0.8097,
+        "mean_N200": 0.8683,
+        "mannwhitney_p_N": 0.0,
+        "mean_low_yield": 0.845,
+        "mean_high_yield": 0.8427,
+        "kruskal_p_tercile": 0.3153,
+        "spearman_rho_yield": 0.0575
+      },
+      {
+        "site_season": "IRTA2022",
+        "flight": "2022-08-30",
+        "feature": "veg_cover",
+        "mean_N100": 0.8749,
+        "mean_N200": 0.9255,
+        "mannwhitney_p_N": 0.0,
+        "mean_low_yield": 0.8868,
+        "mean_high_yield": 0.9081,
+        "kruskal_p_tercile": 0.6713,
+        "spearman_rho_yield": 0.015
+      },
+      {
+        "site_season": "IRTA2022",
+        "flight": "2022-08-30",
+        "feature": "rgb_exg_mean",
+        "mean_N100": 0.0938,
+        "mean_N200": 0.0953,
+        "mannwhitney_p_N": 0.1967,
+        "mean_low_yield": 0.0983,
+        "mean_high_yield": 0.0929,
+        "kruskal_p_tercile": 0.0286,
+        "spearman_rho_yield": -0.0938
+      },
+      {
+        "site_season": "IRTA2022",
+        "flight": "2022-08-30",
+        "feature": "rgb_vari_mean",
+        "mean_N100": 0.0264,
+        "mean_N200": 0.0297,
+        "mannwhitney_p_N": 0.0617,
+        "mean_low_yield": 0.0348,
+        "mean_high_yield": 0.0244,
+        "kruskal_p_tercile": 0.0161,
+        "spearman_rho_yield": -0.1234
+      },
+      {
+        "site_season": "IRTA2022",
+        "flight": "2022-08-30",
+        "feature": "tex_contrast",
+        "mean_N100": 4.9416,
+        "mean_N200": 4.3288,
+        "mannwhitney_p_N": 0.0,
+        "mean_low_yield": 4.402,
+        "mean_high_yield": 4.6602,
+        "kruskal_p_tercile": 0.0152,
+        "spearman_rho_yield": 0.0923
+      },
+      {
+        "site_season": "IVIA2022",
+        "flight": "2022-08-31",
+        "feature": "ms_ndvi_veg_mean",
+        "mean_N100": 0.5806,
+        "mean_N200": 0.5884,
+        "mannwhitney_p_N": 0.0014,
+        "mean_low_yield": 0.5676,
+        "mean_high_yield": 0.5962,
+        "kruskal_p_tercile": 0.0,
+        "spearman_rho_yield": 0.506
+      },
+      {
+        "site_season": "IVIA2022",
+        "flight": "2022-08-31",
+        "feature": "ms_ndre_veg_mean",
+        "mean_N100": 0.4345,
+        "mean_N200": 0.4393,
+        "mannwhitney_p_N": 0.0514,
+        "mean_low_yield": 0.4237,
+        "mean_high_yield": 0.4462,
+        "kruskal_p_tercile": 0.0,
+        "spearman_rho_yield": 0.446
+      },
+      {
+        "site_season": "IVIA2022",
+        "flight": "2022-08-31",
+        "feature": "ms_cire_mean",
+        "mean_N100": 1.4462,
+        "mean_N200": 1.4439,
+        "mannwhitney_p_N": 0.462,
+        "mean_low_yield": 1.4099,
+        "mean_high_yield": 1.4712,
+        "kruskal_p_tercile": 0.0,
+        "spearman_rho_yield": 0.446
+      },
+      {
+        "site_season": "IVIA2022",
+        "flight": "2022-08-31",
+        "feature": "veg_cover",
+        "mean_N100": 0.9999,
+        "mean_N200": 0.9991,
+        "mannwhitney_p_N": 0.078,
+        "mean_low_yield": 0.9986,
+        "mean_high_yield": 1.0,
+        "kruskal_p_tercile": 0.0005,
+        "spearman_rho_yield": 0.1925
+      },
+      {
+        "site_season": "IVIA2022",
+        "flight": "2022-08-31",
+        "feature": "rgb_exg_mean",
+        "mean_N100": 0.089,
+        "mean_N200": 0.0906,
+        "mannwhitney_p_N": 0.1589,
+        "mean_low_yield": 0.0852,
+        "mean_high_yield": 0.0927,
+        "kruskal_p_tercile": 0.0,
+        "spearman_rho_yield": 0.302
+      },
+      {
+        "site_season": "IVIA2022",
+        "flight": "2022-08-31",
+        "feature": "rgb_vari_mean",
+        "mean_N100": 0.0806,
+        "mean_N200": 0.0819,
+        "mannwhitney_p_N": 0.4007,
+        "mean_low_yield": 0.0747,
+        "mean_high_yield": 0.0853,
+        "kruskal_p_tercile": 0.0,
+        "spearman_rho_yield": 0.3131
+      },
+      {
+        "site_season": "IVIA2022",
+        "flight": "2022-08-31",
+        "feature": "tex_contrast",
+        "mean_N100": 4.4463,
+        "mean_N200": 4.4469,
+        "mannwhitney_p_N": 0.7779,
+        "mean_low_yield": 4.2401,
+        "mean_high_yield": 4.6418,
+        "kruskal_p_tercile": 0.0148,
+        "spearman_rho_yield": 0.1332
+      },
+      {
+        "site_season": "IVIA2023",
+        "flight": "2023-08-25",
+        "feature": "ms_ndvi_veg_mean",
+        "mean_N100": 0.7234,
+        "mean_N200": 0.7633,
+        "mannwhitney_p_N": 0.0,
+        "mean_low_yield": 0.7526,
+        "mean_high_yield": 0.7411,
+        "kruskal_p_tercile": 0.011,
+        "spearman_rho_yield": -0.0581
+      },
+      {
+        "site_season": "IVIA2023",
+        "flight": "2023-08-25",
+        "feature": "ms_ndre_veg_mean",
+        "mean_N100": 0.7062,
+        "mean_N200": 0.7291,
+        "mannwhitney_p_N": 0.0002,
+        "mean_low_yield": 0.7225,
+        "mean_high_yield": 0.7117,
+        "kruskal_p_tercile": 0.5033,
+        "spearman_rho_yield": -0.0173
+      },
+      {
+        "site_season": "IVIA2023",
+        "flight": "2023-08-25",
+        "feature": "ms_cire_mean",
+        "mean_N100": 1.4151,
+        "mean_N200": 1.2671,
+        "mannwhitney_p_N": 0.0,
+        "mean_low_yield": 1.3515,
+        "mean_high_yield": 1.3451,
+        "kruskal_p_tercile": 0.2333,
+        "spearman_rho_yield": -0.0369
+      },
+      {
+        "site_season": "IVIA2023",
+        "flight": "2023-08-25",
+        "feature": "veg_cover",
+        "mean_N100": 0.994,
+        "mean_N200": 0.9827,
+        "mannwhitney_p_N": 0.0,
+        "mean_low_yield": 0.9878,
+        "mean_high_yield": 0.9879,
+        "kruskal_p_tercile": 0.2003,
+        "spearman_rho_yield": -0.034
+      },
+      {
+        "site_season": "IVIA2023",
+        "flight": "2023-08-25",
+        "feature": "rgb_exg_mean",
+        "mean_N100": 0.1261,
+        "mean_N200": 0.1401,
+        "mannwhitney_p_N": 0.0,
+        "mean_low_yield": 0.1368,
+        "mean_high_yield": 0.1313,
+        "kruskal_p_tercile": 0.0233,
+        "spearman_rho_yield": -0.0643
+      },
+      {
+        "site_season": "IVIA2023",
+        "flight": "2023-08-25",
+        "feature": "rgb_vari_mean",
+        "mean_N100": 0.1451,
+        "mean_N200": 0.1849,
+        "mannwhitney_p_N": 0.0,
+        "mean_low_yield": 0.1703,
+        "mean_high_yield": 0.1609,
+        "kruskal_p_tercile": 0.0594,
+        "spearman_rho_yield": -0.0632
+      },
+      {
+        "site_season": "IVIA2023",
+        "flight": "2023-08-25",
+        "feature": "tex_contrast",
+        "mean_N100": 2.2212,
+        "mean_N200": 2.1507,
+        "mannwhitney_p_N": 0.4015,
+        "mean_low_yield": 2.2224,
+        "mean_high_yield": 2.2088,
+        "kruskal_p_tercile": 0.0876,
+        "spearman_rho_yield": -0.0262
+      }
+    ],
+    "health_class_yield": [
+      {
+        "scheme": "absolute (pooled-calibrated)",
+        "site_season": "IRTA2022",
+        "flight": "2022-08-30",
+        "health_class": "moderate",
+        "n_plots": 91,
+        "mean_yield_t_ha": 7.265,
+        "sd_yield": 1.987
+      },
+      {
+        "scheme": "absolute (pooled-calibrated)",
+        "site_season": "IRTA2022",
+        "flight": "2022-08-30",
+        "health_class": "poor",
+        "n_plots": 309,
+        "mean_yield_t_ha": 7.956,
+        "sd_yield": 1.537
+      },
+      {
+        "scheme": "relative within image (app)",
+        "site_season": "IRTA2022",
+        "flight": "2022-08-30",
+        "health_class": "healthy",
+        "n_plots": 160,
+        "mean_yield_t_ha": 7.689,
+        "sd_yield": 1.76
+      },
+      {
+        "scheme": "relative within image (app)",
+        "site_season": "IRTA2022",
+        "flight": "2022-08-30",
+        "health_class": "moderate",
+        "n_plots": 160,
+        "mean_yield_t_ha": 7.963,
+        "sd_yield": 1.5
+      },
+      {
+        "scheme": "relative within image (app)",
+        "site_season": "IRTA2022",
+        "flight": "2022-08-30",
+        "health_class": "poor",
+        "n_plots": 80,
+        "mean_yield_t_ha": 7.691,
+        "sd_yield": 1.811
+      },
+      {
+        "scheme": "absolute (pooled-calibrated)",
+        "site_season": "IVIA2022",
+        "flight": "2022-08-31",
+        "health_class": "healthy",
+        "n_plots": 25,
+        "mean_yield_t_ha": 7.597,
+        "sd_yield": 1.974
+      },
+      {
+        "scheme": "absolute (pooled-calibrated)",
+        "site_season": "IVIA2022",
+        "flight": "2022-08-31",
+        "health_class": "moderate",
+        "n_plots": 427,
+        "mean_yield_t_ha": 6.654,
+        "sd_yield": 2.697
+      },
+      {
+        "scheme": "absolute (pooled-calibrated)",
+        "site_season": "IVIA2022",
+        "flight": "2022-08-31",
+        "health_class": "poor",
+        "n_plots": 3,
+        "mean_yield_t_ha": 1.778,
+        "sd_yield": 1.834
+      },
+      {
+        "scheme": "relative within image (app)",
+        "site_season": "IVIA2022",
+        "flight": "2022-08-31",
+        "health_class": "healthy",
+        "n_plots": 182,
+        "mean_yield_t_ha": 8.139,
+        "sd_yield": 1.741
+      },
+      {
+        "scheme": "relative within image (app)",
+        "site_season": "IVIA2022",
+        "flight": "2022-08-31",
+        "health_class": "moderate",
+        "n_plots": 182,
+        "mean_yield_t_ha": 6.462,
+        "sd_yield": 2.614
+      },
+      {
+        "scheme": "relative within image (app)",
+        "site_season": "IVIA2022",
+        "flight": "2022-08-31",
+        "health_class": "poor",
+        "n_plots": 91,
+        "mean_yield_t_ha": 4.167,
+        "sd_yield": 2.44
+      },
+      {
+        "scheme": "absolute (pooled-calibrated)",
+        "site_season": "IVIA2023",
+        "flight": "2023-08-25",
+        "health_class": "healthy",
+        "n_plots": 794,
+        "mean_yield_t_ha": 7.329,
+        "sd_yield": 2.534
+      },
+      {
+        "scheme": "absolute (pooled-calibrated)",
+        "site_season": "IVIA2023",
+        "flight": "2023-08-25",
+        "health_class": "moderate",
+        "n_plots": 56,
+        "mean_yield_t_ha": 7.95,
+        "sd_yield": 2.143
+      },
+      {
+        "scheme": "absolute (pooled-calibrated)",
+        "site_season": "IVIA2023",
+        "flight": "2023-08-25",
+        "health_class": "poor",
+        "n_plots": 7,
+        "mean_yield_t_ha": 8.423,
+        "sd_yield": 2.927
+      },
+      {
+        "scheme": "relative within image (app)",
+        "site_season": "IVIA2023",
+        "flight": "2023-08-25",
+        "health_class": "healthy",
+        "n_plots": 343,
+        "mean_yield_t_ha": 7.158,
+        "sd_yield": 2.691
+      },
+      {
+        "scheme": "relative within image (app)",
+        "site_season": "IVIA2023",
+        "flight": "2023-08-25",
+        "health_class": "moderate",
+        "n_plots": 342,
+        "mean_yield_t_ha": 7.531,
+        "sd_yield": 2.389
+      },
+      {
+        "scheme": "relative within image (app)",
+        "site_season": "IVIA2023",
+        "flight": "2023-08-25",
+        "health_class": "poor",
+        "n_plots": 172,
+        "mean_yield_t_ha": 7.512,
+        "sd_yield": 2.385
+      }
+    ]
+  },
+  "exp5_generalisation": {
+    "ms": {
+      "selected_model": "Random Forest",
+      "per_flight_P1": [
+        {
+          "site_season": "IRTA2022",
+          "flight_date": "2022-08-16",
+          "doy": 228,
+          "MAE": 1.160474700358265,
+          "MSE": 2.4181756140219934,
+          "RMSE": 1.5550484281918662,
+          "R2": 0.13381350723623664,
+          "MAPE_%": 20.255656765337775,
+          "n": 399
+        },
+        {
+          "site_season": "IRTA2022",
+          "flight_date": "2022-08-30",
+          "doy": 242,
+          "MAE": 1.1611484227053572,
+          "MSE": 2.275781031187398,
+          "RMSE": 1.5085691999995883,
+          "R2": 0.18496504829062144,
+          "MAPE_%": 19.633776152715917,
+          "n": 400
+        },
+        {
+          "site_season": "IRTA2022",
+          "flight_date": "2022-09-08",
+          "doy": 251,
+          "MAE": 1.2205209281818914,
+          "MSE": 2.6161342099638607,
+          "RMSE": 1.6174468182799275,
+          "R2": 0.06307294495259796,
+          "MAPE_%": 20.753778684643734,
+          "n": 400
+        },
+        {
+          "site_season": "IVIA2022",
+          "flight_date": "2022-08-09",
+          "doy": 221,
+          "MAE": 2.1143375867220806,
+          "MSE": 6.851103702850819,
+          "RMSE": 2.617461308759084,
+          "R2": 0.0529388673950546,
+          "MAPE_%": 60.94316820477462,
+          "n": 455
+        },
+        {
+          "site_season": "IVIA2022",
+          "flight_date": "2022-08-17",
+          "doy": 229,
+          "MAE": 1.8234275083450564,
+          "MSE": 5.036767595966284,
+          "RMSE": 2.244274403001176,
+          "R2": 0.3037433045833454,
+          "MAPE_%": 48.75523288006271,
+          "n": 455
+        },
+        {
+          "site_season": "IVIA2022",
+          "flight_date": "2022-08-31",
+          "doy": 243,
+          "MAE": 1.6369150121967213,
+          "MSE": 4.05236420679374,
+          "RMSE": 2.013048485952025,
+          "R2": 0.43982213642206935,
+          "MAPE_%": 43.2271327000938,
+          "n": 455
+        },
+        {
+          "site_season": "IVIA2022",
+          "flight_date": "2022-09-23",
+          "doy": 266,
+          "MAE": 1.8465604473539474,
+          "MSE": 4.975916764193809,
+          "RMSE": 2.2306763019752123,
+          "R2": 0.3121550087638576,
+          "MAPE_%": 49.509736106306356,
+          "n": 455
+        },
+        {
+          "site_season": "IVIA2023",
+          "flight_date": "2023-07-11",
+          "doy": 192,
+          "MAE": 1.8912088332446484,
+          "MSE": 5.504488026351836,
+          "RMSE": 2.3461645352259155,
+          "R2": 0.14280173272837748,
+          "MAPE_%": 41.365131223440116,
+          "n": 910
+        },
+        {
+          "site_season": "IVIA2023",
+          "flight_date": "2023-07-18",
+          "doy": 199,
+          "MAE": 1.8586399754680603,
+          "MSE": 5.377561940846518,
+          "RMSE": 2.3189570804235506,
+          "R2": 0.16256757108534403,
+          "MAPE_%": 41.107633558864656,
+          "n": 910
+        },
+        {
+          "site_season": "IVIA2023",
+          "flight_date": "2023-08-08",
+          "doy": 220,
+          "MAE": 1.9323348733816776,
+          "MSE": 5.616051845002892,
+          "RMSE": 2.369821057591246,
+          "R2": 0.12638241539280726,
+          "MAPE_%": 41.019232238821985,
+          "n": 909
+        },
+        {
+          "site_season": "IVIA2023",
+          "flight_date": "2023-08-25",
+          "doy": 237,
+          "MAE": 2.076588472824088,
+          "MSE": 6.601240499164944,
+          "RMSE": 2.5692879362120826,
+          "R2": -0.043243737421661654,
+          "MAPE_%": 46.23006715831924,
+          "n": 857
+        },
+        {
+          "site_season": "IVIA2023",
+          "flight_date": "2023-09-07",
+          "doy": 250,
+          "MAE": 2.0578431627879086,
+          "MSE": 6.363077603924908,
+          "RMSE": 2.522514143453889,
+          "R2": 0.009096019377795028,
+          "MAPE_%": 44.51490026904866,
+          "n": 910
+        },
+        {
+          "site_season": "IVIA2023",
+          "flight_date": "2023-09-18",
+          "doy": 261,
+          "MAE": 1.9522421035167958,
+          "MSE": 5.857834213490788,
+          "RMSE": 2.420296306961358,
+          "R2": 0.08777613581318411,
+          "MAPE_%": 42.468684183536375,
+          "n": 910
+        }
+      ],
+      "P2": {
+        "IRTA2022": {
+          "MAE": 1.4156872656095776,
+          "MSE": 3.147739043743956,
+          "RMSE": 1.7741868683269968,
+          "R2": -0.12737844076265215,
+          "MAPE_%": 21.46938238368383,
+          "n": 1199
+        },
+        "IVIA2022": {
+          "MAE": 2.164346664027888,
+          "MSE": 7.685111501780002,
+          "RMSE": 2.772203365877042,
+          "R2": -0.06235005610008404,
+          "MAPE_%": 73.49655558438157,
+          "n": 1820
+        },
+        "IVIA2023": {
+          "MAE": 2.6892451211720494,
+          "MSE": 10.110096844336628,
+          "RMSE": 3.1796378479846767,
+          "R2": -0.577731359095732,
+          "MAPE_%": 43.414472853527805,
+          "n": 5406
+        }
+      },
+      "P3": {
+        "image_level": {
+          "MAE": 2.6892451211720494,
+          "MSE": 10.110096844336628,
+          "RMSE": 3.1796378479846767,
+          "R2": -0.577731359095732,
+          "MAPE_%": 43.414472853527805,
+          "n": 5406
+        },
+        "plot_level": {
+          "MAE": 2.675393387504681,
+          "MSE": 9.938094773035244,
+          "RMSE": 3.1524743889578617,
+          "R2": -0.547631238117706,
+          "MAPE_%": 43.035996533105006,
+          "n": 910
+        }
+      }
+    },
+    "rgb": {
+      "selected_model": "Random Forest",
+      "per_flight_P1": [
+        {
+          "site_season": "IRTA2022",
+          "flight_date": "2022-08-16",
+          "doy": 228,
+          "MAE": 1.1745496849136046,
+          "MSE": 2.4268419135948283,
+          "RMSE": 1.5578324407954882,
+          "R2": 0.1307092531081634,
+          "MAPE_%": 20.114657733414468,
+          "n": 399
+        },
+        {
+          "site_season": "IRTA2022",
+          "flight_date": "2022-08-30",
+          "doy": 242,
+          "MAE": 1.2208337744968503,
+          "MSE": 2.5483455176235505,
+          "RMSE": 1.596353819685207,
+          "R2": 0.08735039204916673,
+          "MAPE_%": 20.846086222972488,
+          "n": 400
+        },
+        {
+          "site_season": "IRTA2022",
+          "flight_date": "2022-09-08",
+          "doy": 251,
+          "MAE": 1.2686629920430974,
+          "MSE": 2.814231684399453,
+          "RMSE": 1.6775671922159938,
+          "R2": -0.007872529720825305,
+          "MAPE_%": 21.688272471938216,
+          "n": 400
+        },
+        {
+          "site_season": "IVIA2022",
+          "flight_date": "2022-08-09",
+          "doy": 221,
+          "MAE": 2.1669518980976243,
+          "MSE": 6.945234413642906,
+          "RMSE": 2.635381265328208,
+          "R2": 0.03992672490791527,
+          "MAPE_%": 63.738983181355636,
+          "n": 455
+        },
+        {
+          "site_season": "IVIA2022",
+          "flight_date": "2022-08-17",
+          "doy": 229,
+          "MAE": 2.034302494759088,
+          "MSE": 6.133136667263022,
+          "RMSE": 2.476517043604389,
+          "R2": 0.15218691608739232,
+          "MAPE_%": 60.59984563639919,
+          "n": 455
+        },
+        {
+          "site_season": "IVIA2022",
+          "flight_date": "2022-08-31",
+          "doy": 243,
+          "MAE": 2.038805998183309,
+          "MSE": 6.102390802586005,
+          "RMSE": 2.470301763466562,
+          "R2": 0.15643706536068647,
+          "MAPE_%": 57.92752675862709,
+          "n": 455
+        },
+        {
+          "site_season": "IVIA2022",
+          "flight_date": "2022-09-23",
+          "doy": 266,
+          "MAE": 1.9377641138341994,
+          "MSE": 5.659059548467102,
+          "RMSE": 2.3788777918310773,
+          "R2": 0.21772088441458726,
+          "MAPE_%": 55.825109115811586,
+          "n": 455
+        },
+        {
+          "site_season": "IVIA2023",
+          "flight_date": "2023-07-11",
+          "doy": 192,
+          "MAE": 2.0035551053784664,
+          "MSE": 6.167100855145045,
+          "RMSE": 2.4833648252210234,
+          "R2": 0.03961492116764276,
+          "MAPE_%": 43.93847725007164,
+          "n": 910
+        },
+        {
+          "site_season": "IVIA2023",
+          "flight_date": "2023-07-18",
+          "doy": 199,
+          "MAE": 1.8932774319597052,
+          "MSE": 5.608504845733236,
+          "RMSE": 2.3682282081195716,
+          "R2": 0.12660348923797693,
+          "MAPE_%": 42.41419616337324,
+          "n": 910
+        },
+        {
+          "site_season": "IVIA2023",
+          "flight_date": "2023-08-08",
+          "doy": 220,
+          "MAE": 2.043421233683134,
+          "MSE": 6.295464254767483,
+          "RMSE": 2.5090763748374587,
+          "R2": 0.020694888861365834,
+          "MAPE_%": 44.30240143972477,
+          "n": 909
+        },
+        {
+          "site_season": "IVIA2023",
+          "flight_date": "2023-08-25",
+          "doy": 237,
+          "MAE": 2.083508465517757,
+          "MSE": 6.602663041977438,
+          "RMSE": 2.569564757303742,
+          "R2": -0.043468552572774044,
+          "MAPE_%": 46.57077186222198,
+          "n": 857
+        },
+        {
+          "site_season": "IVIA2023",
+          "flight_date": "2023-09-07",
+          "doy": 250,
+          "MAE": 2.0921439523662193,
+          "MSE": 6.7036818209794165,
+          "RMSE": 2.5891469291987694,
+          "R2": -0.04394530677039454,
+          "MAPE_%": 45.572484363032416,
+          "n": 910
+        },
+        {
+          "site_season": "IVIA2023",
+          "flight_date": "2023-09-18",
+          "doy": 261,
+          "MAE": 2.0458550932802555,
+          "MSE": 6.361122393374391,
+          "RMSE": 2.5221265617280966,
+          "R2": 0.00940049875680915,
+          "MAPE_%": 44.45775976284863,
+          "n": 910
+        }
+      ],
+      "P2": {
+        "IRTA2022": {
+          "MAE": 1.393981425521565,
+          "MSE": 3.0436527118154455,
+          "RMSE": 1.7446067499053892,
+          "R2": -0.09009940175607145,
+          "MAPE_%": 21.685774514544192,
+          "n": 1199
+        },
+        "IVIA2022": {
+          "MAE": 2.231738789963375,
+          "MSE": 8.251862163476428,
+          "RMSE": 2.8726054660319136,
+          "R2": -0.14069473556355105,
+          "MAPE_%": 76.80862419827929,
+          "n": 1820
+        },
+        "IVIA2023": {
+          "MAE": 2.6980375473729055,
+          "MSE": 10.374019464441263,
+          "RMSE": 3.2208724694469453,
+          "R2": -0.6189178086940905,
+          "MAPE_%": 44.62432698813468,
+          "n": 5406
+        }
+      },
+      "P3": {
+        "image_level": {
+          "MAE": 2.6980375473729055,
+          "MSE": 10.374019464441265,
+          "RMSE": 3.2208724694469453,
+          "R2": -0.6189178086940907,
+          "MAPE_%": 44.62432698813468,
+          "n": 5406
+        },
+        "plot_level": {
+          "MAE": 2.6582337749148137,
+          "MSE": 9.946206640824032,
+          "RMSE": 3.153760713945183,
+          "R2": -0.5488944762207952,
+          "MAPE_%": 43.78951876827831,
+          "n": 910
+        }
+      }
+    }
+  },
+  "exp6_field_level": {
+    "ms": {
+      "protocol": "P2_Random Forest",
+      "plot_level": {
+        "MAE": 2.236087229075457,
+        "MSE": 7.71794393285154,
+        "RMSE": 2.77811877587182,
+        "R2": -0.29210998104026276,
+        "MAPE_%": 45.679354061886016,
+        "n": 1765
+      },
+      "regional_block_x_N_level": {
+        "MAE": 1.3185862508422668,
+        "MSE": 2.1705908569780155,
+        "RMSE": 1.4732925225419478,
+        "R2": -4.5235723878495655,
+        "MAPE_%": 18.375419164876096,
+        "n": 18
+      },
+      "n_regions": 18,
+      "regional_spearman": -0.3106295149638803,
+      "field_level": [
+        {
+          "site_year": "IRTA2022",
+          "actual_mean": 7.799,
+          "pred_mean": 7.026,
+          "n_plots": 400,
+          "abs_error_t_ha": 0.773,
+          "pct_error": 9.914
+        },
+        {
+          "site_year": "IVIA2022",
+          "actual_mean": 6.673,
+          "pred_mean": 7.567,
+          "n_plots": 455,
+          "abs_error_t_ha": 0.894,
+          "pct_error": 13.396
+        },
+        {
+          "site_year": "IVIA2023",
+          "actual_mean": 7.418,
+          "pred_mean": 5.545,
+          "n_plots": 910,
+          "abs_error_t_ha": 1.873,
+          "pct_error": 25.253
+        }
+      ]
+    },
+    "rgb": {
+      "protocol": "P2_Random Forest",
+      "plot_level": {
+        "MAE": 2.2521062612430796,
+        "MSE": 7.891243189780056,
+        "RMSE": 2.809135665962051,
+        "R2": -0.32112310960564017,
+        "MAPE_%": 47.15878295494479,
+        "n": 1765
+      },
+      "regional_block_x_N_level": {
+        "MAE": 1.2439784194062504,
+        "MSE": 1.9667101950010821,
+        "RMSE": 1.402394450574118,
+        "R2": -4.004750707894574,
+        "MAPE_%": 17.41845349597265,
+        "n": 18
+      },
+      "n_regions": 18,
+      "regional_spearman": -0.3766769865841073,
+      "field_level": [
+        {
+          "site_year": "IRTA2022",
+          "actual_mean": 7.799,
+          "pred_mean": 7.196,
+          "n_plots": 400,
+          "abs_error_t_ha": 0.603,
+          "pct_error": 7.728
+        },
+        {
+          "site_year": "IVIA2022",
+          "actual_mean": 6.673,
+          "pred_mean": 7.639,
+          "n_plots": 455,
+          "abs_error_t_ha": 0.965,
+          "pct_error": 14.465
+        },
+        {
+          "site_year": "IVIA2023",
+          "actual_mean": 7.418,
+          "pred_mean": 5.684,
+          "n_plots": 910,
+          "abs_error_t_ha": 1.734,
+          "pct_error": 23.376
+        }
+      ]
+    },
+    "gridded_maps": [
+      {
+        "image": "IRTA2022_20220830_trial_9band.tif",
+        "zones": 5131,
+        "crop_zones": 3633,
+        "zone_size_m": 1.0085871975275036,
+        "pred_field_t_ha": 7.656200349168841,
+        "pi90": [
+          3.893122308397508,
+          11.419278389940171
+        ],
+        "actual_trial_mean_t_ha": 7.799011438191437,
+        "cropped_area_ha": 0.3670171433013523,
+        "production_t": 2.809956780694764,
+        "note": "Model trained on all site-seasons incl. this one (map demo); held-out accuracy is in the field_level table above."
+      },
+      {
+        "image": "IVIA2022_20220831_trial_9band.tif",
+        "zones": 2108,
+        "crop_zones": 1951,
+        "zone_size_m": 0.9963325302832183,
+        "pred_field_t_ha": 6.562632201624446,
+        "pi90": [
+          2.8071276667914913,
+          10.325710242395777
+        ],
+        "actual_trial_mean_t_ha": 6.673422873422872,
+        "cropped_area_ha": 0.19367157747669933,
+        "production_t": 1.2709953308879907,
+        "note": "Model trained on all site-seasons incl. this one (map demo); held-out accuracy is in the field_level table above."
+      },
+      {
+        "image": "IVIA2023-F2_2023-08-08_trial_9band.tif",
+        "zones": 2688,
+        "crop_zones": 2440,
+        "zone_size_m": 1.0084682978901238,
+        "pred_field_t_ha": 7.06344436991646,
+        "pi90": [
+          3.300366329145129,
+          10.82652241068779
+        ],
+        "actual_trial_mean_t_ha": 6.867863247863248,
+        "cropped_area_ha": 0.24731249086173146,
+        "production_t": 1.746878021187313,
+        "note": "Model trained on all site-seasons incl. this one (map demo); held-out accuracy is in the field_level table above."
+      }
+    ]
+  }
+}

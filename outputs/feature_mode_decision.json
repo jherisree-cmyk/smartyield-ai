@@ -1,0 +1,7 @@
+{
+  "p1_best_rmse": {
+    "abs": 2.302,
+    "absrel": 2.291
+  },
+  "chosen": "absrel"
+}

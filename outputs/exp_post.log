@@ -1,0 +1,196 @@
+===== exp4
+===== exp5
+{
+ "ms": {
+  "P2": {
+   "IRTA2022": {
+    "MAE": 1.4156872656095776,
+    "MSE": 3.147739043743956,
+    "RMSE": 1.7741868683269968,
+    "R2": -0.12737844076265215,
+    "MAPE_%": 21.46938238368383,
+    "n": 1199
+   },
+   "IVIA2022": {
+    "MAE": 2.164346664027888,
+    "MSE": 7.685111501780002,
+    "RMSE": 2.772203365877042,
+    "R2": -0.06235005610008404,
+    "MAPE_%": 73.49655558438157,
+    "n": 1820
+   },
+   "IVIA2023": {
+    "MAE": 2.6892451211720494,
+    "MSE": 10.110096844336628,
+    "RMSE": 3.1796378479846767,
+    "R2": -0.577731359095732,
+    "MAPE_%": 43.414472853527805,
+    "n": 5406
+   }
+  },
+  "P3": {
+   "image_level": {
+    "MAE": 2.6892451211720494,
+    "MSE": 10.110096844336628,
+    "RMSE": 3.1796378479846767,
+    "R2": -0.577731359095732,
+    "MAPE_%": 43.414472853527805,
+    "n": 5406
+   },
+   "plot_level": {
+    "MAE": 2.675393387504681,
+    "MSE": 9.938094773035244,
+    "RMSE": 3.1524743889578617,
+    "R2": -0.547631238117706,
+    "MAPE_%": 43.035996533105006,
+    "n": 910
+   }
+  }
+ },
+ "rgb": {
+  "P2": {
+   "IRTA2022": {
+    "MAE": 1.393981425521565,
+    "MSE": 3.0436527118154455,
+    "RMSE": 1.7446067499053892,
+    "R2": -0.09009940175607145,
+    "MAPE_%": 21.685774514544192,
+    "n": 1199
+   },
+   "IVIA2022": {
+    "MAE": 2.231738789963375,
+    "MSE": 8.251862163476428,
+    "RMSE": 2.8726054660319136,
+    "R2": -0.14069473556355105,
+    "MAPE_%": 76.80862419827929,
+    "n": 1820
+   },
+   "IVIA2023": {
+    "MAE": 2.6980375473729055,
+    "MSE": 10.374019464441263,
+    "RMSE": 3.2208724694469453,
+    "R2": -0.6189178086940905,
+    "MAPE_%": 44.62432698813468,
+    "n": 5406
+   }
+  },
+  "P3": {
+   "image_level": {
+    "MAE": 2.6980375473729055,
+    "MSE": 10.374019464441265,
+    "RMSE": 3.2208724694469453,
+    "R2": -0.6189178086940907,
+    "MAPE_%": 44.62432698813468,
+    "n": 5406
+   },
+   "plot_level": {
+    "MAE": 2.6582337749148137,
+    "MSE": 9.946206640824032,
+    "RMSE": 3.153760713945183,
+    "R2": -0.5488944762207952,
+    "MAPE_%": 43.78951876827831,
+    "n": 910
+   }
+  }
+ }
+}
+===== exp6
+map {'image': 'IRTA2022_20220830_trial_9band.tif', 'zones': 5131, 'crop_zones': 3633, 'zone_size_m': 1.0085871975275036, 'pred_field_t_ha': 7.656200349168841, 'pi90': [3.893122308397508, 11.419278389940171], 'actual_trial_mean_t_ha': 7.799011438191437, 'cropped_area_ha': 0.3670171433013523, 'production_t': 2.809956780694764, 'note': 'Model trained on all site-seasons incl. this one (map demo); held-out accuracy is in the field_level table above.'}
+map {'image': 'IVIA2022_20220831_trial_9band.tif', 'zones': 2108, 'crop_zones': 1951, 'zone_size_m': 0.9963325302832183, 'pred_field_t_ha': 6.562632201624446, 'pi90': [2.8071276667914913, 10.325710242395777], 'actual_trial_mean_t_ha': 6.673422873422872, 'cropped_area_ha': 0.19367157747669933, 'production_t': 1.2709953308879907, 'note': 'Model trained on all site-seasons incl. this one (map demo); held-out accuracy is in the field_level table above.'}
+map {'image': 'IVIA2023-F2_2023-08-08_trial_9band.tif', 'zones': 2688, 'crop_zones': 2440, 'zone_size_m': 1.0084682978901238, 'pred_field_t_ha': 7.06344436991646, 'pi90': [3.300366329145129, 10.82652241068779], 'actual_trial_mean_t_ha': 6.867863247863248, 'cropped_area_ha': 0.24731249086173146, 'production_t': 1.746878021187313, 'note': 'Model trained on all site-seasons incl. this one (map demo); held-out accuracy is in the field_level table above.'}
+{
+ "ms": {
+  "protocol": "P2_Random Forest",
+  "plot_level": {
+   "MAE": 2.236087229075457,
+   "MSE": 7.71794393285154,
+   "RMSE": 2.77811877587182,
+   "R2": -0.29210998104026276,
+   "MAPE_%": 45.679354061886016,
+   "n": 1765
+  },
+  "regional_block_x_N_level": {
+   "MAE": 1.3185862508422668,
+   "MSE": 2.1705908569780155,
+   "RMSE": 1.4732925225419478,
+   "R2": -4.5235723878495655,
+   "MAPE_%": 18.375419164876096,
+   "n": 18
+  },
+  "n_regions": 18,
+  "regional_spearman": -0.3106295149638803,
+  "field_level": [
+   {
+    "site_year": "IRTA2022",
+    "actual_mean": 7.799,
+    "pred_mean": 7.026,
+    "n_plots": 400,
+    "abs_error_t_ha": 0.773,
+    "pct_error": 9.914
+   },
+   {
+    "site_year": "IVIA2022",
+    "actual_mean": 6.673,
+    "pred_mean": 7.567,
+    "n_plots": 455,
+    "abs_error_t_ha": 0.894,
+    "pct_error": 13.396
+   },
+   {
+    "site_year": "IVIA2023",
+    "actual_mean": 7.418,
+    "pred_mean": 5.545,
+    "n_plots": 910,
+    "abs_error_t_ha": 1.873,
+    "pct_error": 25.253
+   }
+  ]
+ },
+ "rgb": {
+  "protocol": "P2_Random Forest",
+  "plot_level": {
+   "MAE": 2.2521062612430796,
+   "MSE": 7.891243189780056,
+   "RMSE": 2.809135665962051,
+   "R2": -0.32112310960564017,
+   "MAPE_%": 47.15878295494479,
+   "n": 1765
+  },
+  "regional_block_x_N_level": {
+   "MAE": 1.2439784194062504,
+   "MSE": 1.9667101950010821,
+   "RMSE": 1.402394450574118,
+   "R2": -4.004750707894574,
+   "MAPE_%": 17.41845349597265,
+   "n": 18
+  },
+  "n_regions": 18,
+  "regional_spearman": -0.3766769865841073,
+  "field_level": [
+   {
+    "site_year": "IRTA2022",
+    "actual_mean": 7.799,
+    "pred_mean": 7.196,
+    "n_plots": 400,
+    "abs_error_t_ha": 0.603,
+    "pct_error": 7.728
+   },
+   {
+    "site_year": "IVIA2022",
+    "actual_mean": 6.673,
+    "pred_mean": 7.639,
+    "n_plots": 455,
+    "abs_error_t_ha": 0.965,
+    "pct_error": 14.465
+   },
+   {
+    "site_year": "IVIA2023",
+    "actual_mean": 7.418,
+    "pred_mean": 5.684,
+    "n_plots": 910,
+    "abs_error_t_ha": 1.734,
+    "pct_error": 23.376
+   }
+  ]
+ }
+}

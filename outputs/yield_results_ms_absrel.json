@@ -1,0 +1,975 @@
+{
+  "track": "ms",
+  "feature_mode": "absrel",
+  "n_rows": 8425,
+  "n_plots": 1765,
+  "features": [
+    "veg_cover",
+    "gap_fraction",
+    "green_pixel_pct",
+    "canopy_density",
+    "rgb_exg_mean",
+    "rgb_exg_std",
+    "rgb_exg_p10",
+    "rgb_exg_p50",
+    "rgb_exg_p90",
+    "rgb_exg_veg_mean",
+    "rgb_exgr_mean",
+    "rgb_exgr_veg_mean",
+    "rgb_vari_mean",
+    "rgb_vari_std",
+    "rgb_vari_p10",
+    "rgb_vari_p50",
+    "rgb_vari_p90",
+    "rgb_vari_veg_mean",
+    "rgb_gli_mean",
+    "rgb_gli_std",
+    "rgb_gli_p10",
+    "rgb_gli_p50",
+    "rgb_gli_p90",
+    "rgb_gli_veg_mean",
+    "rgb_ngrdi_mean",
+    "rgb_ngrdi_veg_mean",
+    "rgb_tgi_mean",
+    "rgb_tgi_veg_mean",
+    "rgb_r_chrom",
+    "rgb_g_chrom",
+    "rgb_b_chrom",
+    "tex_contrast",
+    "tex_homogeneity",
+    "tex_energy",
+    "tex_correlation",
+    "tex_entropy",
+    "tex_laplacian_var",
+    "doy",
+    "ms_ndvi_mean",
+    "ms_ndvi_std",
+    "ms_ndvi_p10",
+    "ms_ndvi_p50",
+    "ms_ndvi_p90",
+    "ms_ndvi_veg_mean",
+    "ms_ndre_mean",
+    "ms_ndre_std",
+    "ms_ndre_p10",
+    "ms_ndre_p50",
+    "ms_ndre_p90",
+    "ms_ndre_veg_mean",
+    "ms_gndvi_mean",
+    "ms_gndvi_veg_mean",
+    "ms_osavi_mean",
+    "ms_osavi_veg_mean",
+    "ms_cire_mean",
+    "ms_cire_std",
+    "ms_cire_p10",
+    "ms_cire_p50",
+    "ms_cire_p90",
+    "ms_cire_veg_mean",
+    "ms_refl_blue",
+    "ms_refl_green",
+    "ms_refl_red",
+    "ms_refl_re1",
+    "ms_refl_re2",
+    "ms_refl_re3",
+    "ms_refl_nir",
+    "ms_ndvi_tex_contrast",
+    "ms_ndvi_tex_homogeneity",
+    "veg_cover_rel",
+    "gap_fraction_rel",
+    "green_pixel_pct_rel",
+    "canopy_density_rel",
+    "rgb_exg_mean_rel",
+    "rgb_exg_std_rel",
+    "rgb_exg_p10_rel",
+    "rgb_exg_p50_rel",
+    "rgb_exg_p90_rel",
+    "rgb_exg_veg_mean_rel",
+    "rgb_exgr_mean_rel",
+    "rgb_exgr_veg_mean_rel",
+    "rgb_vari_mean_rel",
+    "rgb_vari_std_rel",
+    "rgb_vari_p10_rel",
+    "rgb_vari_p50_rel",
+    "rgb_vari_p90_rel",
+    "rgb_vari_veg_mean_rel",
+    "rgb_gli_mean_rel",
+    "rgb_gli_std_rel",
+    "rgb_gli_p10_rel",
+    "rgb_gli_p50_rel",
+    "rgb_gli_p90_rel",
+    "rgb_gli_veg_mean_rel",
+    "rgb_ngrdi_mean_rel",
+    "rgb_ngrdi_veg_mean_rel",
+    "rgb_tgi_mean_rel",
+    "rgb_tgi_veg_mean_rel",
+    "rgb_r_chrom_rel",
+    "rgb_g_chrom_rel",
+    "rgb_b_chrom_rel",
+    "tex_contrast_rel",
+    "tex_homogeneity_rel",
+    "tex_energy_rel",
+    "tex_correlation_rel",
+    "tex_entropy_rel",
+    "tex_laplacian_var_rel",
+    "ms_ndvi_mean_rel",
+    "ms_ndvi_std_rel",
+    "ms_ndvi_p10_rel",
+    "ms_ndvi_p50_rel",
+    "ms_ndvi_p90_rel",
+    "ms_ndvi_veg_mean_rel",
+    "ms_ndre_mean_rel",
+    "ms_ndre_std_rel",
+    "ms_ndre_p10_rel",
+    "ms_ndre_p50_rel",
+    "ms_ndre_p90_rel",
+    "ms_ndre_veg_mean_rel",
+    "ms_gndvi_mean_rel",
+    "ms_gndvi_veg_mean_rel",
+    "ms_osavi_mean_rel",
+    "ms_osavi_veg_mean_rel",
+    "ms_cire_mean_rel",
+    "ms_cire_std_rel",
+    "ms_cire_p10_rel",
+    "ms_cire_p50_rel",
+    "ms_cire_p90_rel",
+    "ms_cire_veg_mean_rel",
+    "ms_refl_blue_rel",
+    "ms_refl_green_rel",
+    "ms_refl_red_rel",
+    "ms_refl_re1_rel",
+    "ms_refl_re2_rel",
+    "ms_refl_re3_rel",
+    "ms_refl_nir_rel",
+    "ms_ndvi_tex_contrast_rel",
+    "ms_ndvi_tex_homogeneity_rel"
+  ],
+  "site_seasons": [
+    "IRTA2022",
+    "IVIA2022",
+    "IVIA2023"
+  ],
+  "P1_grouped_cv": {
+    "Mean baseline": {
+      "image_level": {
+        "MAE": 2.001498505884837,
+        "MSE": 6.239497101611708,
+        "RMSE": 2.4978985370930715,
+        "R2": -0.00632995298601724,
+        "MAPE_%": 48.174208486648396,
+        "n": 8425
+      },
+      "plot_level": {
+        "MAE": 1.948905334437767,
+        "MSE": 6.010909554414918,
+        "RMSE": 2.451715634900369,
+        "R2": -0.006324520877961204,
+        "MAPE_%": 47.32907414353575,
+        "n": 1765
+      }
+    },
+    "Linear Regression": {
+      "image_level": {
+        "MAE": 1.9888575385001233,
+        "MSE": 21.996499417525673,
+        "RMSE": 4.6900425816324605,
+        "R2": -2.5476795427916366,
+        "MAPE_%": 46.20934939622743,
+        "n": 8425
+      },
+      "plot_level": {
+        "MAE": 1.8837132137479238,
+        "MSE": 14.02650479562569,
+        "RMSE": 3.7451975642982696,
+        "R2": -1.3482661966994738,
+        "MAPE_%": 44.77693459143167,
+        "n": 1765
+      }
+    },
+    "Ridge Regression": {
+      "image_level": {
+        "MAE": 1.9507084119585598,
+        "MSE": 5.975284369282046,
+        "RMSE": 2.444439479570326,
+        "R2": 0.036283286859055464,
+        "MAPE_%": 45.57854017043808,
+        "n": 8425
+      },
+      "plot_level": {
+        "MAE": 1.8428274298536849,
+        "MSE": 5.331594019557267,
+        "RMSE": 2.3090244735726095,
+        "R2": 0.10740400455601062,
+        "MAPE_%": 43.7254860528491,
+        "n": 1765
+      }
+    },
+    "Random Forest": {
+      "image_level": {
+        "MAE": 1.8267098311607104,
+        "MSE": 5.249188950517171,
+        "RMSE": 2.291110855134943,
+        "R2": 0.15339073265629388,
+        "MAPE_%": 41.241068753512785,
+        "n": 8425
+      },
+      "plot_level": {
+        "MAE": 1.6927847890585248,
+        "MSE": 4.497499229304189,
+        "RMSE": 2.1207308243396166,
+        "R2": 0.24704510754877285,
+        "MAPE_%": 38.716318631096655,
+        "n": 1765
+      }
+    },
+    "SVR": {
+      "image_level": {
+        "MAE": 1.8440505102229627,
+        "MSE": 5.478440073365509,
+        "RMSE": 2.3406067746132644,
+        "R2": 0.11641623488493225,
+        "MAPE_%": 43.906362234634905,
+        "n": 8425
+      },
+      "plot_level": {
+        "MAE": 1.6949547438617183,
+        "MSE": 4.641836748491358,
+        "RMSE": 2.154492225210237,
+        "R2": 0.22288064732427038,
+        "MAPE_%": 41.370370712659486,
+        "n": 1765
+      }
+    },
+    "XGBoost": {
+      "image_level": {
+        "MAE": 1.8313759145105273,
+        "MSE": 5.30533738012755,
+        "RMSE": 2.3033317998342207,
+        "R2": 0.14433489921172737,
+        "MAPE_%": 41.47012722022413,
+        "n": 8425
+      },
+      "plot_level": {
+        "MAE": 1.6881007262384429,
+        "MSE": 4.475039613433668,
+        "RMSE": 2.1154289431303686,
+        "R2": 0.2508052143970626,
+        "MAPE_%": 38.88052092121206,
+        "n": 1765
+      }
+    }
+  },
+  "P2_leave_site_season_out": {
+    "Mean baseline": {
+      "IRTA2022": {
+        "image_level": {
+          "MAE": 1.4058168482154743,
+          "MSE": 3.1223928259912226,
+          "RMSE": 1.7670293789270235,
+          "R2": -0.11830056643692033,
+          "MAPE_%": 22.55425438926074,
+          "n": 1199
+        },
+        "plot_level": {
+          "MAE": 1.4056072080498148,
+          "MSE": 3.120901073590145,
+          "RMSE": 1.7666072210851356,
+          "R2": -0.11770131701824371,
+          "MAPE_%": 22.55130166773028,
+          "n": 400
+        },
+        "actual_mean_t_ha": 7.800452247162838,
+        "pred_mean_t_ha": 7.225730130905886
+      },
+      "IVIA2022": {
+        "image_level": {
+          "MAE": 2.1984779325690154,
+          "MSE": 7.88826277628165,
+          "RMSE": 2.808605130003442,
+          "R2": -0.09043263731099338,
+          "MAPE_%": 74.56953624413467,
+          "n": 1820
+        },
+        "plot_level": {
+          "MAE": 2.198477932569015,
+          "MSE": 7.888262776281651,
+          "RMSE": 2.808605130003442,
+          "R2": -0.0904326373109936,
+          "MAPE_%": 74.56953624413467,
+          "n": 455
+        },
+        "actual_mean_t_ha": 6.673422873422873,
+        "pred_mean_t_ha": 7.482246561793271
+      },
+      "IVIA2023": {
+        "image_level": {
+          "MAE": 2.091688421751143,
+          "MSE": 6.492472290973226,
+          "RMSE": 2.548033023917317,
+          "R2": -0.013182889268424924,
+          "MAPE_%": 44.642839884227165,
+          "n": 5406
+        },
+        "plot_level": {
+          "MAE": 2.0944901443318518,
+          "MSE": 6.50964453453585,
+          "RMSE": 2.551400504533902,
+          "R2": -0.01372843193494333,
+          "MAPE_%": 44.58892217907117,
+          "n": 910
+        },
+        "actual_mean_t_ha": 7.41167153094641,
+        "pred_mean_t_ha": 7.121024138449115
+      }
+    },
+    "Linear Regression": {
+      "IRTA2022": {
+        "image_level": {
+          "MAE": 7418.354240141333,
+          "MSE": 104090212.57437709,
+          "RMSE": 10202.461103791433,
+          "R2": -37280427.87925613,
+          "MAPE_%": 103589.48465073279,
+          "n": 1199
+        },
+        "plot_level": {
+          "MAE": 7366.344732179104,
+          "MSE": 54324130.19144113,
+          "RMSE": 7370.49049870096,
+          "R2": -19455326.30103388,
+          "MAPE_%": 102880.07899862205,
+          "n": 400
+        },
+        "actual_mean_t_ha": 7.800452247162838,
+        "pred_mean_t_ha": -7355.375067858692
+      },
+      "IVIA2022": {
+        "image_level": {
+          "MAE": 499.8909936615762,
+          "MSE": 660291.5630343736,
+          "RMSE": 812.5832652930859,
+          "R2": -91274.28974296714,
+          "MAPE_%": 10694.686515709316,
+          "n": 1820
+        },
+        "plot_level": {
+          "MAE": 348.7522799423419,
+          "MSE": 121634.99980340294,
+          "RMSE": 348.7620962825561,
+          "R2": -16813.193110269065,
+          "MAPE_%": 7503.072641241155,
+          "n": 455
+        },
+        "actual_mean_t_ha": 6.673422873422873,
+        "pred_mean_t_ha": 355.42570281576474
+      },
+      "IVIA2023": {
+        "image_level": {
+          "MAE": 6042.71166932059,
+          "MSE": 58349089.62855288,
+          "RMSE": 7638.657580265846,
+          "R2": -9105667.313476562,
+          "MAPE_%": 102090.4976128063,
+          "n": 5406
+        },
+        "plot_level": {
+          "MAE": 5040.591521976385,
+          "MSE": 25453632.651008725,
+          "RMSE": 5045.159328604868,
+          "R2": -3963820.830433474,
+          "MAPE_%": 85040.84244055305,
+          "n": 910
+        },
+        "actual_mean_t_ha": 7.41167153094641,
+        "pred_mean_t_ha": -5025.4575084852495
+      }
+    },
+    "Ridge Regression": {
+      "IRTA2022": {
+        "image_level": {
+          "MAE": 1.8151694123569297,
+          "MSE": 4.71569962986294,
+          "RMSE": 2.1715661698099233,
+          "R2": -0.6889513463277877,
+          "MAPE_%": 25.757152785122877,
+          "n": 1199
+        },
+        "plot_level": {
+          "MAE": 1.7858055157547272,
+          "MSE": 4.498578189961832,
+          "RMSE": 2.120985193244364,
+          "R2": -0.6110945682253952,
+          "MAPE_%": 25.34244735431247,
+          "n": 400
+        },
+        "actual_mean_t_ha": 7.800452247162838,
+        "pred_mean_t_ha": 6.411893066723701
+      },
+      "IVIA2022": {
+        "image_level": {
+          "MAE": 2.1937982264101485,
+          "MSE": 8.051358287587142,
+          "RMSE": 2.837491548460919,
+          "R2": -0.11297811704084904,
+          "MAPE_%": 75.83670849283342,
+          "n": 1820
+        },
+        "plot_level": {
+          "MAE": 2.1903120689308526,
+          "MSE": 8.025833358358273,
+          "RMSE": 2.832990179714408,
+          "R2": -0.1094496828740894,
+          "MAPE_%": 75.7909170042726,
+          "n": 455
+        },
+        "actual_mean_t_ha": 6.673422873422873,
+        "pred_mean_t_ha": 7.664312270081919
+      },
+      "IVIA2023": {
+        "image_level": {
+          "MAE": 19.043776464402974,
+          "MSE": 1348.056259377955,
+          "RMSE": 36.71588565427716,
+          "R2": -209.37094569843796,
+          "MAPE_%": 332.5416277949589,
+          "n": 5406
+        },
+        "plot_level": {
+          "MAE": 17.267107797854862,
+          "MSE": 547.7317120294719,
+          "RMSE": 23.40366877285422,
+          "R2": -84.29670193370535,
+          "MAPE_%": 295.10254055216257,
+          "n": 910
+        },
+        "actual_mean_t_ha": 7.41167153094641,
+        "pred_mean_t_ha": -8.807217622323986
+      }
+    },
+    "Random Forest": {
+      "IRTA2022": {
+        "image_level": {
+          "MAE": 1.4156872656095776,
+          "MSE": 3.147739043743956,
+          "RMSE": 1.7741868683269968,
+          "R2": -0.12737844076265215,
+          "MAPE_%": 21.46938238368383,
+          "n": 1199
+        },
+        "plot_level": {
+          "MAE": 1.333489046966889,
+          "MSE": 2.8187116756301442,
+          "RMSE": 1.678901925554362,
+          "R2": -0.009476967663811342,
+          "MAPE_%": 20.255450390914277,
+          "n": 400
+        },
+        "actual_mean_t_ha": 7.800452247162838,
+        "pred_mean_t_ha": 7.026826310239871
+      },
+      "IVIA2022": {
+        "image_level": {
+          "MAE": 2.164346664027888,
+          "MSE": 7.685111501780002,
+          "RMSE": 2.772203365877042,
+          "R2": -0.06235005610008404,
+          "MAPE_%": 73.49655558438157,
+          "n": 1820
+        },
+        "plot_level": {
+          "MAE": 2.1509678195652016,
+          "MSE": 7.584659621469974,
+          "RMSE": 2.7540260749437313,
+          "R2": -0.04846410784051769,
+          "MAPE_%": 73.31675366535725,
+          "n": 455
+        },
+        "actual_mean_t_ha": 6.673422873422873,
+        "pred_mean_t_ha": 7.5673883178072225
+      },
+      "IVIA2023": {
+        "image_level": {
+          "MAE": 2.6892451211720494,
+          "MSE": 10.110096844336628,
+          "RMSE": 3.1796378479846767,
+          "R2": -0.577731359095732,
+          "MAPE_%": 43.414472853527805,
+          "n": 5406
+        },
+        "plot_level": {
+          "MAE": 2.6753933875046805,
+          "MSE": 9.938094773035244,
+          "RMSE": 3.1524743889578617,
+          "R2": -0.547631238117706,
+          "MAPE_%": 43.035996533105006,
+          "n": 910
+        },
+        "actual_mean_t_ha": 7.41167153094641,
+        "pred_mean_t_ha": 5.547538736400947
+      }
+    },
+    "SVR": {
+      "IRTA2022": {
+        "image_level": {
+          "MAE": 1.324976907649258,
+          "MSE": 2.9114475339489037,
+          "RMSE": 1.7062964378878904,
+          "R2": -0.04274945780815931,
+          "MAPE_%": 22.142639943173002,
+          "n": 1199
+        },
+        "plot_level": {
+          "MAE": 1.1989480366859089,
+          "MSE": 2.445081959368294,
+          "RMSE": 1.5636757846076321,
+          "R2": 0.12433260082168596,
+          "MAPE_%": 20.52876425377499,
+          "n": 400
+        },
+        "actual_mean_t_ha": 7.800452247162838,
+        "pred_mean_t_ha": 7.764205993480794
+      },
+      "IVIA2022": {
+        "image_level": {
+          "MAE": 2.209609688832825,
+          "MSE": 8.128479545801444,
+          "RMSE": 2.8510488501254136,
+          "R2": -0.12363896079978409,
+          "MAPE_%": 75.83145475988519,
+          "n": 1820
+        },
+        "plot_level": {
+          "MAE": 2.194363218007634,
+          "MSE": 7.9801955445459996,
+          "RMSE": 2.8249239891625404,
+          "R2": -0.10314094759386272,
+          "MAPE_%": 75.63803799464046,
+          "n": 455
+        },
+        "actual_mean_t_ha": 6.673422873422873,
+        "pred_mean_t_ha": 7.759931345207913
+      },
+      "IVIA2023": {
+        "image_level": {
+          "MAE": 2.256601638237192,
+          "MSE": 7.26950339925402,
+          "RMSE": 2.6962016614589532,
+          "R2": -0.13444249393920105,
+          "MAPE_%": 42.98699499387091,
+          "n": 5406
+        },
+        "plot_level": {
+          "MAE": 2.2607473641029863,
+          "MSE": 7.294220341734389,
+          "RMSE": 2.7007814316849834,
+          "R2": -0.13590819129751486,
+          "MAPE_%": 42.956493857169114,
+          "n": 910
+        },
+        "actual_mean_t_ha": 7.41167153094641,
+        "pred_mean_t_ha": 6.483454094551701
+      }
+    },
+    "XGBoost": {
+      "IRTA2022": {
+        "image_level": {
+          "MAE": 1.4503603813190986,
+          "MSE": 3.3529541091156285,
+          "RMSE": 1.8311073450553434,
+          "R2": -0.20087724012454133,
+          "MAPE_%": 22.19065851277561,
+          "n": 1199
+        },
+        "plot_level": {
+          "MAE": 1.3105976633342862,
+          "MSE": 2.7962337000868787,
+          "RMSE": 1.672194277016543,
+          "R2": -0.0014268365394336513,
+          "MAPE_%": 20.207795542965947,
+          "n": 400
+        },
+        "actual_mean_t_ha": 7.800452247162838,
+        "pred_mean_t_ha": 7.188023090362549
+      },
+      "IVIA2022": {
+        "image_level": {
+          "MAE": 2.177259034570951,
+          "MSE": 7.959569312189756,
+          "RMSE": 2.8212708682772303,
+          "R2": -0.10028968394001536,
+          "MAPE_%": 75.3776721347553,
+          "n": 1820
+        },
+        "plot_level": {
+          "MAE": 2.1698417371300405,
+          "MSE": 7.9034238799958265,
+          "RMSE": 2.811302879448571,
+          "R2": -0.09252842985448018,
+          "MAPE_%": 75.28057339739159,
+          "n": 455
+        },
+        "actual_mean_t_ha": 6.673422873422873,
+        "pred_mean_t_ha": 7.767353534698486
+      },
+      "IVIA2023": {
+        "image_level": {
+          "MAE": 3.1508063356529203,
+          "MSE": 13.981170334196898,
+          "RMSE": 3.739140320206892,
+          "R2": -1.1818318076228844,
+          "MAPE_%": 46.49803216600297,
+          "n": 5406
+        },
+        "plot_level": {
+          "MAE": 3.080082929311945,
+          "MSE": 13.007987465667336,
+          "RMSE": 3.60665876756692,
+          "R2": -1.025696897310012,
+          "MAPE_%": 44.830695796651625,
+          "n": 910
+        },
+        "actual_mean_t_ha": 7.41167153094641,
+        "pred_mean_t_ha": 4.8644490242004395
+      }
+    }
+  },
+  "P3_temporal_2022_to_2023": {
+    "Mean baseline": {
+      "image_level": {
+        "MAE": 2.091688421751143,
+        "MSE": 6.492472290973226,
+        "RMSE": 2.548033023917317,
+        "R2": -0.013182889268424924,
+        "MAPE_%": 44.642839884227165,
+        "n": 5406
+      },
+      "plot_level": {
+        "MAE": 2.0944901443318518,
+        "MSE": 6.50964453453585,
+        "RMSE": 2.551400504533902,
+        "R2": -0.01372843193494333,
+        "MAPE_%": 44.58892217907117,
+        "n": 910
+      }
+    },
+    "Linear Regression": {
+      "image_level": {
+        "MAE": 6042.71166932059,
+        "MSE": 58349089.62855288,
+        "RMSE": 7638.657580265846,
+        "R2": -9105667.313476562,
+        "MAPE_%": 102090.4976128063,
+        "n": 5406
+      },
+      "plot_level": {
+        "MAE": 5040.591521976385,
+        "MSE": 25453632.651008725,
+        "RMSE": 5045.159328604868,
+        "R2": -3963820.830433474,
+        "MAPE_%": 85040.84244055305,
+        "n": 910
+      }
+    },
+    "Ridge Regression": {
+      "image_level": {
+        "MAE": 19.043776464402974,
+        "MSE": 1348.056259377955,
+        "RMSE": 36.71588565427716,
+        "R2": -209.37094569843796,
+        "MAPE_%": 332.5416277949589,
+        "n": 5406
+      },
+      "plot_level": {
+        "MAE": 17.267107797854862,
+        "MSE": 547.7317120294719,
+        "RMSE": 23.40366877285422,
+        "R2": -84.29670193370535,
+        "MAPE_%": 295.10254055216257,
+        "n": 910
+      }
+    },
+    "Random Forest": {
+      "image_level": {
+        "MAE": 2.6892451211720494,
+        "MSE": 10.110096844336628,
+        "RMSE": 3.1796378479846767,
+        "R2": -0.577731359095732,
+        "MAPE_%": 43.414472853527805,
+        "n": 5406
+      },
+      "plot_level": {
+        "MAE": 2.675393387504681,
+        "MSE": 9.938094773035244,
+        "RMSE": 3.1524743889578617,
+        "R2": -0.547631238117706,
+        "MAPE_%": 43.035996533105006,
+        "n": 910
+      }
+    },
+    "SVR": {
+      "image_level": {
+        "MAE": 2.256601638237192,
+        "MSE": 7.26950339925402,
+        "RMSE": 2.6962016614589532,
+        "R2": -0.13444249393920105,
+        "MAPE_%": 42.98699499387091,
+        "n": 5406
+      },
+      "plot_level": {
+        "MAE": 2.2607473641029863,
+        "MSE": 7.294220341734389,
+        "RMSE": 2.7007814316849834,
+        "R2": -0.13590819129751486,
+        "MAPE_%": 42.956493857169114,
+        "n": 910
+      }
+    },
+    "XGBoost": {
+      "image_level": {
+        "MAE": 3.1508063356529203,
+        "MSE": 13.981170334196898,
+        "RMSE": 3.739140320206892,
+        "R2": -1.1818318076228844,
+        "MAPE_%": 46.49803216600297,
+        "n": 5406
+      },
+      "plot_level": {
+        "MAE": 3.080082929311945,
+        "MSE": 13.007987465667336,
+        "RMSE": 3.60665876756692,
+        "R2": -1.025696897310012,
+        "MAPE_%": 44.830695796651625,
+        "n": 910
+      }
+    }
+  },
+  "best_params": {
+    "Mean baseline": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "Linear Regression": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "Ridge Regression": [
+      {
+        "model__alpha": 30.0
+      },
+      {
+        "model__alpha": 30.0
+      },
+      {
+        "model__alpha": 300.0
+      },
+      {
+        "model__alpha": 300.0
+      },
+      {
+        "model__alpha": 300.0
+      }
+    ],
+    "Random Forest": [
+      {
+        "model__min_samples_leaf": 3
+      },
+      {
+        "model__min_samples_leaf": 12
+      },
+      {
+        "model__min_samples_leaf": 12
+      },
+      {
+        "model__min_samples_leaf": 3
+      },
+      {
+        "model__min_samples_leaf": 3
+      }
+    ],
+    "SVR": [
+      {
+        "model__C": 4.0
+      },
+      {
+        "model__C": 1.0
+      },
+      {
+        "model__C": 1.0
+      },
+      {
+        "model__C": 1.0
+      },
+      {
+        "model__C": 1.0
+      }
+    ],
+    "XGBoost": [
+      {
+        "model__max_depth": 3
+      },
+      {
+        "model__max_depth": 3
+      },
+      {
+        "model__max_depth": 6
+      },
+      {
+        "model__max_depth": 6
+      },
+      {
+        "model__max_depth": 3
+      }
+    ]
+  },
+  "selected_model": "Random Forest",
+  "selection_rule": "lowest image-level RMSE under P1 grouped 5-fold CV",
+  "conformal_q90_t_ha": 3.7630780407713313,
+  "conformal_coverage_check": 0.899940652818991,
+  "final_params": {
+    "model__min_samples_leaf": 3
+  },
+  "permutation_importance": {
+    "doy": 0.02319,
+    "ms_refl_blue": 0.01786,
+    "rgb_b_chrom": 0.01693,
+    "ms_ndre_p90_rel": 0.01422,
+    "ms_ndre_veg_mean_rel": 0.01274,
+    "ms_ndvi_std": 0.0098,
+    "ms_ndre_p90": 0.00874,
+    "tex_correlation": 0.00755,
+    "ms_ndre_p50_rel": 0.00637,
+    "ms_refl_re1": 0.00593,
+    "ms_ndre_veg_mean": 0.00558,
+    "ms_ndre_std": 0.00507,
+    "green_pixel_pct": 0.00485,
+    "tex_homogeneity": 0.0046,
+    "rgb_vari_p10": 0.00449,
+    "rgb_r_chrom": 0.00439,
+    "ms_ndre_p10_rel": 0.004,
+    "rgb_vari_std": 0.00383,
+    "ms_refl_red": 0.00362,
+    "ms_ndvi_std_rel": 0.0036,
+    "ms_ndre_p10": 0.00356,
+    "ms_cire_veg_mean": 0.00342,
+    "rgb_vari_std_rel": 0.00338,
+    "rgb_exg_std": 0.00335,
+    "ms_refl_red_rel": 0.00332,
+    "rgb_gli_veg_mean_rel": 0.00315,
+    "tex_contrast": 0.00301,
+    "ms_refl_green": 0.00295,
+    "ms_ndre_mean": 0.00275,
+    "tex_correlation_rel": 0.00268,
+    "rgb_vari_p90_rel": 0.00254,
+    "ms_ndvi_p10": 0.00247,
+    "ms_ndre_p50": 0.00232,
+    "ms_refl_re3_rel": 0.00225,
+    "rgb_vari_veg_mean_rel": 0.00216,
+    "canopy_density": 0.00215,
+    "rgb_ngrdi_veg_mean_rel": 0.00208,
+    "rgb_exg_std_rel": 0.00204,
+    "ms_ndvi_tex_contrast_rel": 0.00194,
+    "ms_refl_re2_rel": 0.00184,
+    "ms_refl_re2": 0.00182,
+    "ms_ndvi_p50": 0.00163,
+    "tex_homogeneity_rel": 0.00161,
+    "rgb_exg_veg_mean_rel": 0.00153,
+    "tex_energy_rel": 0.0014,
+    "ms_cire_mean": 0.00139,
+    "ms_cire_p50": 0.00136,
+    "rgb_exgr_veg_mean_rel": 0.00128,
+    "rgb_vari_mean_rel": 0.00123,
+    "ms_ndre_mean_rel": 0.00122,
+    "rgb_ngrdi_mean": 0.00111,
+    "rgb_exg_p50_rel": 0.00108,
+    "gap_fraction": 0.00099,
+    "rgb_exgr_mean": 0.00097,
+    "rgb_gli_mean_rel": 0.00094,
+    "rgb_vari_p10_rel": 0.00093,
+    "ms_cire_p10": 0.00088,
+    "ms_cire_std": 0.00088,
+    "rgb_gli_p50": 0.00085,
+    "ms_ndvi_p10_rel": 0.00077,
+    "rgb_vari_p50_rel": 0.00076,
+    "ms_ndvi_tex_contrast": 0.00073,
+    "ms_refl_blue_rel": 0.00072,
+    "rgb_exg_p90_rel": 0.00069,
+    "tex_energy": 0.00066,
+    "ms_cire_p90": 0.0006,
+    "ms_cire_p50_rel": 0.00059,
+    "tex_laplacian_var_rel": 0.00059,
+    "veg_cover_rel": 0.00055,
+    "ms_gndvi_mean_rel": 0.00054,
+    "rgb_ngrdi_mean_rel": 0.00054,
+    "rgb_vari_veg_mean": 0.00043,
+    "veg_cover": 0.00043,
+    "rgb_gli_std": 0.00042,
+    "ms_cire_veg_mean_rel": 0.00041,
+    "tex_entropy": 0.00039,
+    "rgb_vari_mean": 0.00031,
+    "rgb_vari_p90": 0.00027,
+    "ms_ndvi_p90": 0.00021,
+    "tex_entropy_rel": 0.00014,
+    "rgb_gli_std_rel": 9e-05,
+    "ms_ndvi_tex_homogeneity": 6e-05,
+    "ms_osavi_mean": 5e-05,
+    "rgb_g_chrom_rel": 5e-05,
+    "canopy_density_rel": 1e-05,
+    "rgb_exg_p10_rel": -2e-05,
+    "rgb_exgr_mean_rel": -0.00014,
+    "rgb_r_chrom_rel": -0.00015,
+    "ms_cire_p90_rel": -0.00018,
+    "rgb_exg_p10": -0.0002,
+    "gap_fraction_rel": -0.00021,
+    "rgb_exg_mean_rel": -0.00022,
+    "rgb_gli_p90_rel": -0.00023,
+    "rgb_gli_p10_rel": -0.00026,
+    "ms_ndvi_p50_rel": -0.00034,
+    "green_pixel_pct_rel": -0.00042,
+    "ms_refl_green_rel": -0.00042,
+    "rgb_b_chrom_rel": -0.00043,
+    "ms_cire_p10_rel": -0.00049,
+    "ms_ndvi_mean_rel": -0.00053,
+    "rgb_gli_p50_rel": -0.00057,
+    "rgb_vari_p50": -0.00057,
+    "tex_contrast_rel": -0.00059,
+    "ms_ndvi_mean": -0.00059,
+    "ms_refl_re1_rel": -0.00078,
+    "rgb_gli_p10": -0.0008,
+    "rgb_ngrdi_veg_mean": -0.00112,
+    "ms_ndvi_tex_homogeneity_rel": -0.00115,
+    "ms_refl_nir_rel": -0.00116,
+    "ms_osavi_mean_rel": -0.00132,
+    "ms_cire_std_rel": -0.00135,
+    "rgb_gli_p90": -0.00151,
+    "ms_cire_mean_rel": -0.00155,
+    "rgb_exg_mean": -0.0016,
+    "rgb_tgi_veg_mean": -0.00166,
+    "ms_refl_nir": -0.00166,
+    "rgb_exg_p50": -0.00188,
+    "rgb_tgi_veg_mean_rel": -0.00189,
+    "rgb_exg_p90": -0.00192,
+    "ms_gndvi_mean": -0.00204,
+    "rgb_exgr_veg_mean": -0.00213,
+    "ms_refl_re3": -0.00215,
+    "ms_osavi_veg_mean_rel": -0.00228,
+    "rgb_g_chrom": -0.00229,
+    "tex_laplacian_var": -0.00231,
+    "ms_gndvi_veg_mean": -0.00239,
+    "ms_ndvi_veg_mean": -0.00247,
+    "ms_ndvi_veg_mean_rel": -0.00267,
+    "rgb_gli_mean": -0.00284,
+    "rgb_tgi_mean": -0.00291,
+    "rgb_exg_veg_mean": -0.00292,
+    "ms_ndre_std_rel": -0.00349,
+    "rgb_tgi_mean_rel": -0.00364,
+    "ms_osavi_veg_mean": -0.00546,
+    "rgb_gli_veg_mean": -0.00666,
+    "ms_ndvi_p90_rel": -0.00764,
+    "ms_gndvi_veg_mean_rel": -0.00877
+  },
+  "train_seconds": 23567.5
+}

@@ -1,0 +1,33 @@
+10 raster jobs, 855 plots
+  MAIA_Amposta_Orthomosaic_20220816_SUELOS_georef_SR_CALIBRATED_COG.tif: 0 plots  NDVI_t=0.379
+  MAIA_Amposta_Orthomosaic_20220830_SUELOS_georef_SR_CALIBRATED_COG.tif: 0 plots  NDVI_t=0.357
+  MAIA_Amposta_Orthomosaic_20220908_SUELOS_georef_SR_CALIBRATED_COG.tif: 0 plots  NDVI_t=0.300
+  MAIA_Amposta_Orthomosaic_20220830_BESTRICE_georef_SR_CALIBRATED_COG.tif: 400 plots  NDVI_t=0.407
+  MAIA_Amposta_Orthomosaic_20220816_BESTRICE_georef_SR_CALIBRATED_COG.tif: 399 plots  NDVI_t=0.454
+  MAIA_Amposta_Orthomosaic_20220908_BESTRICE_georef_SR_CALIBRATED_COG.tif: 400 plots  NDVI_t=0.397
+  MAIA_ElPalmar_Orthomosaic_20220809_IVIA_georef_SR_CALIBRATED_COG.tif: 455 plots  NDVI_t=0.439
+  MAIA_ElPalmar_Orthomosaic_20220831_IVIA_georef_SR_CALIBRATED_COG.tif: 455 plots  NDVI_t=0.442
+  MAIA_ElPalmar_Orthomosaic_20220817_IVIA_georef_SR_CALIBRATED_COG.tif: 455 plots  NDVI_t=0.445
+  MAIA_ElPalmar_Orthomosaic_20220923_IVIA_georef_SR_CALIBRATED_COG.tif: 455 plots  NDVI_t=0.393
+rows: 3019 plots: 855 by trial/date:
+trial     flight_date
+IRTA2022  2022-08-16     399
+          2022-08-30     400
+          2022-09-08     400
+IVIA2022  2022-08-09     455
+          2022-08-17     455
+          2022-08-31     455
+          2022-09-23     455
+dtype: int64
+NDVI validation vs dataset-provided values: {
+ "n": 1820,
+ "pearson_r": 0.92171813588907,
+ "mae": 0.2554773455614203,
+ "bias": -0.2554773455614203,
+ "per_trial": {
+  "IVIA2022": {
+   "n": 1820,
+   "r": 0.92171813588907
+  }
+ }
+}

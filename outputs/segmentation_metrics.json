@@ -1,0 +1,28 @@
+{
+  "dataset": "PhenoBench v1.1 subset",
+  "n_train": 432,
+  "n_model_selection_val": 48,
+  "test_split": "PhenoBench official val split (held out)",
+  "test_unet": {
+    "iou": 0.9333976386335783,
+    "dice": 0.9655516485406009,
+    "precision": 0.9679813595644451,
+    "recall": 0.9631341045165743,
+    "accuracy": 0.9915083567301433,
+    "mean_image_iou": 0.8756232948526933,
+    "std_image_iou": 0.11870171253119335,
+    "n_images": 180
+  },
+  "test_exg_otsu_baseline": {
+    "iou": 0.5016655010501793,
+    "dice": 0.6681454700788464,
+    "precision": 0.5251022373896431,
+    "recall": 0.9182997309937588,
+    "accuracy": 0.8872872034708659,
+    "mean_image_iou": 0.7428989019370069,
+    "std_image_iou": 0.2746868710837901,
+    "n_images": 180
+  },
+  "best_val_iou": 0.937897843963308,
+  "train_seconds": 3104.5
+}

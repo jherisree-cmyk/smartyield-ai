@@ -1,0 +1,65 @@
+===== demo
+demo: {'trial': 'IVIA2022', 'tif': 'IVIA2022_20220831_trial_9band.tif', 'png': 'IVIA2022_20220831_trial_rgb.png', 'size_px': [2058, 1125], 'mb': 59.0}
+demo: {'trial': 'IRTA2022', 'tif': 'IRTA2022_20220830_trial_9band.tif', 'png': 'IRTA2022_20220830_trial_rgb.png', 'size_px': [3526, 1692], 'mb': 145.6}
+demo: {'trial': 'IVIA2023-F2', 'tif': 'IVIA2023-F2_2023-08-08_trial_9band.tif', 'png': 'IVIA2023-F2_2023-08-08_trial_rgb.png', 'size_px': [1896, 1642], 'mb': 84.7}
+===== exp1
+{
+ "as captured": {
+  "raw": {
+   "iou": 0.26422925621865667,
+   "dice": 0.418008450475151
+  },
+  "preprocessed": {
+   "iou": 0.30360608857719057,
+   "dice": 0.4657942168842718
+  }
+ },
+ "warm colour cast": {
+  "raw": {
+   "iou": 0.25789292378236955,
+   "dice": 0.41003954932333825
+  },
+  "preprocessed": {
+   "iou": 0.30223800742290535,
+   "dice": 0.4641824393085046
+  }
+ }
+}
+===== exp2b
+IRTA2022_20220830_trial_9band.tif U-Net IoU vs NDVI 0.709 ExG 0.670
+IVIA2022_20220831_trial_9band.tif U-Net IoU vs NDVI 0.932 ExG 0.875
+IVIA2023-F2_2023-08-08_trial_9band.tif U-Net IoU vs NDVI 0.865 ExG 0.843
+===== exp3
+C:\Users\donep\smartyield-ai\scripts\06_experiments.py:208: DtypeWarning: Columns (0: variety) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(config.PROCESSED_DIR / "plot_features_ms.csv")
+   site_season           feature  mannwhitney_p_N  kruskal_p_tercile  spearman_rho_yield
+0     IRTA2022  ms_ndvi_veg_mean           0.0000             0.4794             -0.0461
+1     IRTA2022  ms_ndre_veg_mean           0.0000             0.3169              0.0555
+2     IRTA2022      ms_cire_mean           0.0000             0.3153              0.0575
+3     IRTA2022         veg_cover           0.0000             0.6713              0.0150
+4     IRTA2022      rgb_exg_mean           0.1967             0.0286             -0.0938
+5     IRTA2022     rgb_vari_mean           0.0617             0.0161             -0.1234
+6     IRTA2022      tex_contrast           0.0000             0.0152              0.0923
+7     IVIA2022  ms_ndvi_veg_mean           0.0014             0.0000              0.5060
+8     IVIA2022  ms_ndre_veg_mean           0.0514             0.0000              0.4460
+9     IVIA2022      ms_cire_mean           0.4620             0.0000              0.4460
+10    IVIA2022         veg_cover           0.0780             0.0005              0.1925
+11    IVIA2022      rgb_exg_mean           0.1589             0.0000              0.3020
+12    IVIA2022     rgb_vari_mean           0.4007             0.0000              0.3131
+13    IVIA2022      tex_contrast           0.7779             0.0148              0.1332
+14    IVIA2023  ms_ndvi_veg_mean           0.0000             0.0110             -0.0581
+15    IVIA2023  ms_ndre_veg_mean           0.0002             0.5033             -0.0173
+16    IVIA2023      ms_cire_mean           0.0000             0.2333             -0.0369
+17    IVIA2023         veg_cover           0.0000             0.2003             -0.0340
+18    IVIA2023      rgb_exg_mean           0.0000             0.0233             -0.0643
+19    IVIA2023     rgb_vari_mean           0.0000             0.0594             -0.0632
+20    IVIA2023      tex_contrast           0.4015             0.0876             -0.0262
+  site_season      flight health_class  n_plots  mean_yield_t_ha  sd_yield
+0    IRTA2022  2022-08-30     moderate       91             7.26      1.99
+1    IRTA2022  2022-08-30         poor      309             7.96      1.54
+2    IVIA2022  2022-08-31      healthy       25             7.60      1.97
+3    IVIA2022  2022-08-31     moderate      427             6.65      2.70
+4    IVIA2022  2022-08-31         poor        3             1.78      1.83
+5    IVIA2023  2023-08-25      healthy      794             7.33      2.53
+6    IVIA2023  2023-08-25     moderate       56             7.95      2.14
+7    IVIA2023  2023-08-25         poor        7             8.42      2.93

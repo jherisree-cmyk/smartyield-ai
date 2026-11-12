@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7fb8e6"/><stop offset="0.55" stop-color="#cfe8f5"/><stop offset="1" stop-color="#f6efd2"/>
+    </linearGradient>
+    <linearGradient id="field" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fbf4d"/><stop offset="1" stop-color="#2f6b1f"/>
+    </linearGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6c9b5a"/><stop offset="1" stop-color="#4c7d3c"/>
+    </linearGradient>
+    <clipPath id="fieldclip"><path d="M0 520 Q400 470 800 500 T1600 480 V900 H0 Z"/></clipPath>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <circle cx="1270" cy="170" r="70" fill="#fff4c2" opacity="0.9"/>
+  <circle cx="1270" cy="170" r="120" fill="#fff4c2" opacity="0.25"/>
+  <path d="M0 470 Q250 380 520 450 T1050 430 T1600 420 V600 H0 Z" fill="url(#hill)" opacity="0.8"/>
+  <path d="M0 520 Q400 470 800 500 T1600 480 V900 H0 Z" fill="url(#field)"/>
+  <g clip-path="url(#fieldclip)" stroke="#2a5a19" stroke-width="5" opacity="0.45" fill="none">
+    <path d="M800 470 L-900 900"/><path d="M800 470 L-600 900"/><path d="M800 470 L-300 900"/>
+    <path d="M800 470 L0 900"/><path d="M800 470 L200 900"/><path d="M800 470 L400 900"/>
+    <path d="M800 470 L600 900"/><path d="M800 470 L800 900"/><path d="M800 470 L1000 900"/>
+    <path d="M800 470 L1200 900"/><path d="M800 470 L1400 900"/><path d="M800 470 L1600 900"/>
+    <path d="M800 470 L1900 900"/><path d="M800 470 L2200 900"/><path d="M800 470 L2500 900"/>
+  </g>
+  <g fill="#1f3d14" opacity="0.85">
+    <rect x="1080" y="360" width="34" height="34" rx="6"/>
+    <rect x="1052" y="372" width="28" height="6" rx="3"/><rect x="1114" y="372" width="28" height="6" rx="3"/>
+    <circle cx="1046" cy="375" r="12" fill="none" stroke="#1f3d14" stroke-width="3"/>
+    <circle cx="1148" cy="375" r="12" fill="none" stroke="#1f3d14" stroke-width="3"/>
+    <path d="M1097 394 L1097 410" stroke="#1f3d14" stroke-width="3"/>
+    <path d="M1097 410 L1010 560 L1184 560 Z" fill="#fff8b0" opacity="0.18"/>
+  </g>
+</svg>

@@ -1,0 +1,47 @@
+6 raster jobs, 910 plots
+  MAIA_Albufera_flight1_1_orthomosaic_2023-08-08_corrected_geocal_COG.tif: 909 plots  NDVI_t=0.339
+  MAIA_Albufera_flight1_1_orthomosaic_2023-08-25_corrected_geocal_COG.tif: 857 plots  NDVI_t=0.300
+  MAIA_Albufera_flight1_1_corrected_orthomosaic_2023-07-18_geocal_COG.tif: 910 plots  NDVI_t=0.300
+  MAIA_Albufera1_flight1_1_orthomosaic_2023-07-11_corrected_geocal_COG.tif: 910 plots  NDVI_t=0.300
+  MAIA_Albufera_flight1_orthomosaic_2023-09-18_corrected_geocal_COG.tif: 910 plots  NDVI_t=0.300
+  MAIA_Albufera_flight2_1_corected_orthomosaic_2023-09-07_geocal_COG.tif: 910 plots  NDVI_t=0.300
+C:\Users\donep\smartyield-ai\scripts\02_build_plot_dataset.py:186: DtypeWarning: Columns (0: variety) have mixed types. Specify dtype option on import or set low_memory=False.
+  old = pd.read_csv(old_p)
+rows: 8425 plots: 1765 by trial/date:
+trial        flight_date
+IRTA2022     2022-08-16     399
+             2022-08-30     400
+             2022-09-08     400
+IVIA2022     2022-08-09     455
+             2022-08-17     455
+             2022-08-31     455
+             2022-09-23     455
+IVIA2023-F1  2023-07-11     455
+             2023-07-18     455
+             2023-08-08     454
+             2023-08-25     405
+             2023-09-07     455
+             2023-09-18     455
+IVIA2023-F2  2023-07-11     455
+             2023-07-18     455
+             2023-08-08     455
+             2023-08-25     452
+             2023-09-07     455
+             2023-09-18     455
+dtype: int64
+NDVI validation vs dataset-provided values: {
+ "n": 4547,
+ "pearson_r": 0.4627048517578941,
+ "mae": 0.15102614324079078,
+ "bias": -0.1265822738161869,
+ "per_trial": {
+  "IVIA2022": {
+   "n": 1820,
+   "r": 0.92171813588907
+  },
+  "IVIA2023-F2": {
+   "n": 2727,
+   "r": 0.6927482403391712
+  }
+ }
+}
